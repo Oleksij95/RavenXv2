@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Заголовок </title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"  type="text/javascript"></script>
+
+  <script>
+
+
+</script>
+
+
+   <header>
+     <div class="container-fluid">
+       <div class="row">
+         <div class="logo col-md-3">
+            <h1>Raven <span>X</span></h1>
+         </div>
+         <div class="menu col-md-5 col-md-offset-4 text-right">
+             <a onclick="ShowFaq();" id = "faq">faq & help</a>
+             <a href="">save qoute</a>
+             <a href="">log out</a>
+          </div>
+        
+         
+       </div>
+     </div>
+   </header>
+
+   <nav>
+     <div class="container-fluid">
+       <div class="row">
+         <ul class="list-inline">
+           <li class="active"><a href="">cars & location</a></li>
+           <li class="secondLi"><a href="">services</a></li>
+           <li><a href="">appointment time</a></li>
+           <li><a href="">review & book</a></li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+    
+
+<div class="container">
+  <div class="row">
+    <div class="section_header text-center">
+      <h1 class="title">Hi Alina Smith, it's nice to see you again.</h1>
+      <p class="title">Help diagnosing your car anywhere . 7 days a week, fair and transparent pricing.</p> 
+    </div> 
+  </div>
+</div>
+
+<div class="wrapper">
+  
+<div class="user_price">
+    <div class="top_line">
+      <h4>Your total price</h4>
+      <h3>$0.00</h3>
+      <p>Please select a service</p>
+    </div>
+    <div class="body_line">
+      <span>Summary</span>
+      <p class="enter_loc">Enter your location</p>
+      <p class="location_user">07304 - Jersey City, NJ </p>
+
+      <p class="select_car_user">Select your cars</p>
+      <p class="cars_user">2010 BMW M5 V10-5.0L</p>
+    </div>
+    <div class="footer_line">
+      <a href="#">How Raven X works ></a> <br>
+      <a href="#">Full diagnostics, regardless of location ></a>
+      <a href="#">Frequently Asked Questions ></a>
+    </div>
+  </div>
+
+
+
+
+  <div class="user_select_price">
+    <div class="top_line">
+      <h4>Your total price</h4>
+      <h3>$70.00</h3>
+      <p>Apply promo Code</p>
+
+   <!--    <table>
+        <tr>
+          <td>Shop price</td>
+          <th>$83</th>
+        </tr>
+        <tr>
+          <td>Dealer price</td>
+          <th>$94</th>
+        </tr>
+        <tr>
+          <td>You save</td>
+          <th>26%</th>
+        </tr>
+      </table> -->
+
+      <hr>
+      <a href="#" class="view_price" data-target = "#Price_breakdown" data-toggle="modal">View price breakdown</a>
+    </div>
+    <div class="body_line">
+      <span>Summary</span>
+      <p class="location_user">07304 - Jersey City, NJ </p>
+      <p class="cars_user">2010 BMW M5 V10-5.0L</p>
+      <p class="PServices">Services</p>
+      <hr>
+      <div class="chkbody">
+        <div class="chrcircle" onclick="Move();"></div>
+      </div>
+      <a href="#" class="Inspect">Check Engine Light is on (Ins...</a>
+      <img src="img/delate_ico.png" alt="Delate" class="delateImg">
+      <p class="PServices ">Includes</p>
+      <hr>
+
+      <table class="incl">
+         <tr>
+          <td>FREE</td>
+          <th>50 Point inspection</th>
+        </tr>
+        <tr class="show">
+          
+        </tr> 
+         <tr>
+          <td>FREE</td>
+          <th>Service report</th>
+        </tr>
+      </table>
+
+
+
+    </div>
+    <div class="footer_line">
+      <a href="#">How Raven X works ></a> <br>
+      <a href="#">Full diagnostics, regardless of location ></a>
+      <a href="#">Frequently Asked Questions ></a>
+    </div>
+  </div>
+
+
+
+  <div class="Enter_Zip">
+    <h4>Enter your location</h4>
+    <p>ZIP code</p>
+    <img src="img/zip_ico.png" alt="">
+    <input type="text" id="zip" placeholder="Enter ZIP Code">
+    <p class="great">Great! We have certified mechanics in Highland <br> Park, MI</p>
+    <button class="confirm_zip" onclick="ConfirmZip();">CONFIRM ZIP CODE</button>
+  </div>
+
+
+  <div class="select_car">
+    <h4>Select your car</h4>
+    <select class="sel_car" id = "sel_car">
+      <option value="1" >Select your car</option>
+      <option value="2">2010 BMW M5 V10-5.0L</option>
+      <option value="3">2010 BMW M5 V10-5.0L</option>
+    </select>
+  </div> 
+
+ <div class="Book_remote">
+ 	<h4>Book remote scanning now or select the warning lights manually</h4>
+ 	<p>If you want to learn the meaning of warning lights and the possible cause of malfunction of your car, select manual selection.</p>
+ 	<button class="AUTOMATIC" onclick="ShowOut()">AUTOMATIC</button>
+ 	<button class="MANUAL" onclick="ShowManual()">MANUAL</button>
+ </div>
+
+
+
+  <div class="warning">
+    <div class="top_line">
+      <h4>Warning light is on</h4>
+    </div>
+    <p>Please answer a few questions so we can help you out.</p>
+  </div>
+
+
+  <div class="big_light">
+    <div class="circle"></div>
+    <div class="light">
+      <h4>Select the light that is on in your car</h4>
+    
+      <div class="dow checkeng_11" onclick="chechFn();"></div>
+      <div class="dow checkeng_2" onclick="chechFn();"></div>
+      <div class="dow checkeng_33" onclick="chechFn();"></div>
+      <div class="dow maintreq_11" onclick="OilChangeFn();"></div>
+      <div class="dow maintreq_22" onclick="OilChangeFn();"></div>
+      <div class="dow throttle_22" onclick="OilChangeFn();"></div>
+      <div class="dow brakewarn_11" onclick="AppointmentbrakeFn();"></div>
+
+      
+      <div class="dow brakewarn_22" onclick="AppointmentbrakeFn();"></div>
+      <div class="dow brakewarn_33" onclick="AppointmentbrakeFn();"></div>
+      <div class="dow brakepad_11" onclick="AppointmentBrakePadsFn();"></div>
+      <div class="dow servicesoon_11" onclick="AppointmentEngineSoonFn();"></div>
+      <div class="dow charge_1" onclick="ALTFn();"></div>
+      <div class="dow charge_2" onclick="ALTFn();"></div>
+      <div class="dow charge_33" onclick="ALTFn();"></div>
+
+
+      <div class="dow charge_44" onclick="ALTFn();"></div>
+      <div class="dow abs_11" onclick="AbsHelpFn();"></div>
+      <div class="dow abs_22" onclick="AbsHelpFn();"></div>
+      <div class="dow temp_11" onclick="Appointment_Temp();"></div>
+      <div class="dow lowcoolant_11" onclick="AppointmentCoolantFn();"></div>
+      <div class="dow lowcoolant_22" onclick="AppointmentCoolantFn();"></div>
+      <div class="dow lowcoolant_33" onclick="AppointmentCoolantFn();"></div>
+      
+      
+      <div class="dow lowoil_11" onclick="AppointmentEngineOilFn();"></div>
+      <div class="dow throttle_11" onclick="Appointment_ThrottleFn();"></div>
+      <div class="dow parkbrake_11" onclick="AppointmentParkingBrakeFn();"></div>
+      <div class="dow traction_11" onclick="AppointmentTractionFn();"></div>
+      <div class="dow traction_22" onclick="AppointmentTractionFn();"></div>
+      <div class="dow traction_33" onclick="AppointmentTractionFn();"></div>
+      <div class="dow traction_44" onclick="AppointmentTractionFn();"></div>
+      
+
+      <div class="dow powersteering_11" onclick="AppointmentSteeringFn();"></div>
+      <div class="dow security_11" onclick="AppointmentSecurityFn();"></div>
+      <div class="dow security_22" onclick="AppointmentSecurityFn();"></div>
+      <div class="dow tire_11" onclick="TireFn();"></div>
+      <div class="dow cruise_11" onclick="IndicatorLightFn();"></div>
+      <div class="dow cruise_22" onclick="IndicatorLightFn();"></div>
+      <div class="dow od_11" onclick="AppointmentOverdrivFn();"></div>
+      
+      
+    
+      <div class="dow seatbelt_11" onclick="AppointmentSeatBeltFn();"></div>
+      <div class="dow catalytic_11" onclick="AppointmentCatalyticOnverteFn();"></div>
+      <div class="dow transmissiontemp_11" onclick="AppointmentTransmissionTemperatureFn();"></div>
+      <div class="dow srs_11" onclick="AppointmentAirbagSystemFn();"></div>
+      <div class="dow rearwindefrost_11" onclick="AppointmentDefrostFn();"></div>
+      <div class="dow foglight_11" onclick="AppointmentFogLightsFn();"></div>
+      <div class="dow highbeam_11" onclick="AppointmentExteriorLightsFn();"></div>
+      
+
+      <div class="dow reducedpower_11" onclick="AppointmentReducedPowerFn();"></div>
+      <div class="dow gascap_111" onclick="AppointmentGasCapFn();"></div>
+      <div class="dow lampout_11" onclick="AppointmentBeamLightFn();"></div>
+      <div class="dow dooropen_11" onclick="AppointmentCarIsOpenFn();"></div>
+      <div class="dow washerfluid_11" onclick="AppointmentWasherFluidFn();"></div>
+    </div>
+</div>
+ <div class="big_light2">
+	<div class="circle2"></div>
+
+    <div class="chech DELL">
+      <h3>Explanation</h3>
+      <p>The check engine light comes on when the engine management system has detected faults in the engine or transmission. The problem can be as simple as a loose gas cap or as complex as internal engine damage.</p>
+      <h3>We Recommend</h3>
+      <p class="recommended">Check Engine Light is on (Inspection)</p>
+      <h3>How it works</h3>
+      <p>When this light is on, car's monitoring system will have 'fault codes' that indicate the nature of the problem. Your car may have one or more problems and hence there can be multiple codes. <br>
+      Your mechanic will:</p>
+      <ul class="ABS_menu">
+        <li>Read the codes using scanner</li>
+        <li>Interpret the code</li>
+        <li>Provide a preliminary diagnosis and repair estime</li>
+      </ul>
+      <p>If you approve the repair estimate, they will:</p>
+      <ul class="ABS_menu">
+        <li>Replace the faulty part(s)</li>
+        <li>Clear the memory of any fault codes</li>
+        <li>Turn the check engine light off</li>
+        <li>Let you drive the car for a few days to see if the light comes back on or not</li>
+      </ul>
+      <p>Please note: <br>
+		It may take several days of driving the car for the monitoring system to verify that the repair has fixed all the problems. If the monitoring system fails any of its internal tests, it will turn the light back on. This means that the car has more problems that were not evident during the first evaluation. Your mechanic will have to perform further diagnosis and create new repair estimates for resolving the problems found. In some rare cases, multiple visits may be required to diagnose and resolve the stubborn check engine light issues.</p>
+		<button class="AddServ">ADD RECOMMENDED SERVICES</button>
+    </div>
+
+    <div class="Tire DELL">
+      <h3>Explanation</h3>
+      <ul>
+        <li>Tire pressure is too low or high</li>
+        <li>Tire pressure sensor is bad</li>
+      </ul>
+      <p>If the tire pressure is too low or high, add or remove air accordingly. You may need to reset the tire pressure light as per the owner's manual. If this does not solve the problem, the tire pressure sensor is bad. YourMechanic.com does not offer tire pressure sensor replacement service at this point.</p>
+      <h3>What You Should Do</h3>
+      <p>If adjusting the tire pressure does not help, we recommend taking the car to a tire shop.
+		Note: We currently dont offer this service and recommend taking the car to a local shop or dealer.</p>
+      <button class="Go_back">GO BACK</button>
+    </div>
+    
+    <div class="indicator_light DELL">
+       <h3>Explanation</h3>
+      <p>This is an indicator light, not a warning light. The light will automatically come on to remind you the cruise control system is on. Cruise control helps you remain in constant speed without continuously having to accelerate. However, if your cruise control light is blinking, there is a problem with your cruise control system and it will most likely stop working.</p>
+      <button class="Go_back">GO BACK</button>
+    </div>
+
+    <div class="ALT DELL">
+       <h3>Explanation</h3>
+       <p>
+         This light is also known as the “battery” warning light. You should see this light turning on for a few seconds once you start your engine. If the light stays on, it could mean that the battery is not charging. <br>Common reasons:
+       </p>
+       <ul>
+        <li>Alternator is defective</li>
+        <li>Alternator belt has come off</li>
+        <li>Battery is defective</li>
+        <li>Other electrical system malfunction</li>
+      </ul>
+      <h3>We Recommend</h3>
+      <p class="recommended">Battery Light is on (Inspection)</p>
+      <h3>How it works</h3>
+      <p>Mechanic will scan the car's computer system and the charging system to identify the problem. They will provide an inspection report and a repair estimate. If you approve the estimate, they will order the parts and come back to perform repairs.</p>
+      <button class="AddServ">ADD RECOMMENDED SERVICES</button>
+    </div>
+
+    <div class="abs_help DELL">
+      <h3>Explanation</h3>
+      <p>ABS stands for “Anti-lock Braking System”. The core function of ABS system is to prevent the car from skidding. This system ensures your tires do not lock up when you apply the brakes in slippery or in extreme conditions. If there is a problem with your ABS system, the ABS light will illuminate on your dashboard.</p>
+      <p>The common reasons for the light to come on:</p>
+      <ul class="ABS_menu">
+        <li>ABS Relay</li>
+        <li>ABS Pump</li>
+        <li>Wheel Speed Sensor</li>
+        <li>Wiring issue</li>
+      </ul>
+      <h3>We Recommend</h3>
+      <p class="recommended">ABS Light is on (Inspection)</p>
+      <h3>How it works</h3>
+      <p>Mechanic will scan the car's computer system and check the ABS system to identify the problem. They will provide an inspection report and a repair estimate.</p>
+      <button class="AddServ">ADD RECOMMENDED SERVICES</button>
+    </div>
+    
+    <div class="Appointment_brake_pads DELL">
+      <h3>Explanation</h3>
+      <p>This light is known as "Low Brake Pad Warning Light". It comes on when the brake pads are low. We recommend that you book an appointment for brake pads replacement for both front and rear. Mechanic will only replace the pads that are worn out.</p>
+      <h3>We Recommend</h3>
+      <p class="recommended">Brake Pads Replacemen.</p>
+      <h3>How it works</h3>
+      <p>Mechanic will inspect the entire front and rear brake system. If the brake pads are low in the front and/or rear, they will replace the brake pads</p>
+      <button class="AddServ">ADD RECOMMENDED SERVICES</button>
+    </div>
+
+    <div class="Appointment_brake DELL">
+        <h3>Explanation</h3>
+        <p>The brake warning light indicates that there is something wrong with the brake system. If the light illuminates and stays on, it's either telling you that your emergency brake is still on or that your car is losing brake pressure. It may indicate your brakes are at risk of not working due to the possibility of low brake fluid level or a leak. It's best to safely pull over and get your brake system checked</p>
+        <p>The common reasons for the light goes on:</p>
+        <ul class="Appointment_brake_menu">
+          <li>Brake Fluid is Low</li>
+          <li>Emergency Brake is on</li>
+          <li>Emergency brake is malfunctioning</li>
+          <li>Brake Caliper is leaking</li>
+          <li>Brake Hose is leaking</li>
+          <li>Brake Hydraulic / Electrical Fault</li>
+        </ul>
+        <h3>We Recommend</h3>
+        <p class="recommended">Brake System Inspection</p>
+        <h3>How it works</h3>
+        <p>Mechanic will scan the car's computer system and the brake system to identify the problem. They will provide an inspection report and a repair estimate.</p>
+        <button class="AddServ">ADD RECOMMENDED SERVICES</button>
+    </div>
+
+    <div class="Appointment_coolant DELL">
+      <h3>Explanation</h3>
+      <p>This light usually comes on when the coolant in your car is low. It is possible that adding a little bit of coolant can solve the problem. The coolant could also be leaking from hoses, water pump or other places in the cooling system. You should not drive the car with low coolant to prevent the engine from overheating and causing an internal engine damage.</p>
+      <h3>We Recommend</h3>
+      <p class="recommended">Check Cooling System (Visual Inspection)</p>
+      <h3>How it works</h3>
+      <p>Mechanic will inspect the entire cooling system. If the car needs coolant, mechanic will top off coolant in your car and turn off the light. If there are defective parts in the cooling system, mechanic will provide an inspection report and a repair estimate.</p>
+      <button class="AddServ">ADD RECOMMENDED SERVICES</button>
+    </div>
+
+    <div class="Appointment_engine_oil DELL">
+      <h3>Explanation</h3>
+      <p>This light usually comes on when either the engine oil level is low (engine oil is leaking) or the oil pressure in the engine is low. If the light is blinking, there might be an internal engine damage. We recommend that you do not drive the car with this light on to prevent any further damage to the engine.</p>
+      <h3>We Recommend</h3>
+      <p class="recommended">Oil Pressure Light is on (Inspection)</p>
+      <h3>How it works</h3>
+      <p>Mechanic will check the engine to identify the problem. They will provide an inspection report and a repair estimate.</p>
+      <button class="AddServ">ADD RECOMMENDED SERVICES</button>
+    </div>
+
+    <div class="Appointment_engine_soon DELL">
+      <h3>Explanation</h3>
+      <p>In some cars, this light means that the maintenance is due (oil change or scheduled maintenance). In other cars, this can be an indication of something wrong within the chassis system (i.e. ABS, TC, Brake Hydraulic System). Always look to see if there's another light on, as the Service Vehicle Soon Warning Light serves as a back-up warning light in case one of the warning lights from the chassis system is not working. It's best to pull over and refer to your car owner's manual to identify the problem and book a mechanic for proper diagnosis.</p>
+      <h3>We Recommend</h3>
+      <p class="recommended">Warning Light is on (Inspection)</p>
+      <h3>How it works</h3>
+      <p>Mechanic will scan the car's computer system to identify the problem. They will provide an inspection report and a repair estimate.</p>
+      <button class="AddServ">ADD RECOMMENDED SERVICES</button>
+    </div>
+
+    <div class="Appointment_Oil_Change DELL">
+      <h3>Explanation</h3>
+      <p>This light turns on when an oil change or scheduled maintenance is due. Please check the mileage in your car and the maintenance schedule in the app. If a scheduled service is due, please book that service or else, you may book an Oil Change.</p>
+      <h3>We Recommend</h3>
+      <p class="recommended">Change Oil and Filter</p>
+      <button class="AddServ">ADD RECOMMENDED SERVICES</button>
+    </div>
+
+    <div class="Appointment_parking_brake DELL">
+      <h3>Explanation</h3>
+      <p>This light comes on if the parking brake is on (not fully released). Please release the parking brake. If the light does not go off after you release the brake brake, we recommend that you book an appointment for parking brake system inspection.</p>
+      <h3>We Recommend</h3>
+      <p class="recommended">Check Parking Brake System (Visual Inspection)</p>
+      <h3>How it works</h3>
+      <p>Mechanic will scan the car's computer system and check the entire parking brake system to identify the problem. They will provide an inspection report and a repair estimate.</p>
+      <button class="AddServ">ADD RECOMMENDED SERVICES</button>
+    </div>
+
+
+    <div class="Appointment_Security DELL">
+      <h3>Explanation</h3>
+      <p>This is a Security Warning Light that is part of the Anti-theft system. If this light stays on or it is blinking, it indicates there is problem with your security system. Your car is able to detect a possible fault with the key and immobilizer.</p>
+      <h3>What You Should Do</h3>
+      <p>We recommend that you take the car to a local dealer.</p>
+      <button class="AddServ">ADD RECOMMENDED SERVICES</button>
+    </div>
+
+    <div class="Appointment_steering DELL">
+      <h3>Explanation</h3>
+      <p>The light indicates that the car has a problem with the power steering system. <br>
+      The common reasons are:</p>
+      <ul>
+        <li>Power steering fluid is low</li>
+        <li>Power steering fluid is leaking</li>
+        <li>Steering angle sensor is defective</li>
+        <li>Power steering pump is defective</li>
+        <li>Electrical problems</li>
+      </ul>
+      <h3>We Recommend</h3>
+      <p class="recommended">Warning Light is on (Inspection)</p>
+      <h3>How it works</h3>
+      <p>Mechanic will scan the car's computer system and check the power steering system to identify the problem. They will provide an inspection report and a repair estimate. If you approve the estimate, they will order the parts and come back to perform repairs.</p>
+      <button class="AddServ">ADD RECOMMENDED SERVICES</button>
+    </div>
+
+    <div class="Appointment_Temp DELL">
+       <h3>Explanation</h3>
+       <p>This light comes on when the car is overheating. We recommend that you do not drive the car. <br>The common reasons for the car to overheat are:</p>
+       <ul>
+        <li>Low coolant</li>
+        <li>Cooling System Leak</li>
+        <li>Thermostat is stuck closed</li>
+      </ul>
+      <h3>We Recommend</h3>
+      <p class="recommended">Car is overheating (Inspection)</p>
+      <h3>How it works</h3>
+      <p>Mechanic will scan the car's computer system and check the entire cooling system to identify the problem. They will provide an inspection report and a repair estimate.</p>
+      <button class="AddServ">ADD RECOMMENDED SERVICES</button>
+    </div>
+
+    <div class="Appointment_Throttle DELL">
+      <h3>Explanation</h3>
+      <p>This is the Throttle Control Warning Light. The throttle control system increases or decreases the power output of your car's engine. The warning light should come on when you start the car. If it stays on or comes on while you're driving, it indicates a potential problem and needs to be checked. You should pull over and have your car towed. It is not safe to drive.</p>
+      <h3>We Recommend</h3>
+      <p class="recommended">Warning Light is on (Inspection)</p>
+      <h3>How it works</h3>
+      <p>Mechanic will scan the car's computer system to identify the problem. They will provide an inspection report and a repair estimate.</p>
+      <button class="AddServ">ADD RECOMMENDED SERVICES</button>
+    </div>
+
+    <div class="Appointment_traction DELL">
+       <h3>Explanation</h3>
+       <p>This is the traction control warning light. The traction control system helps maintain the best traction in slippery conditions (e.g. rainy, snowy conditions). The warning light usually comes on when the traction control system engages (its ok for the light to come on). However, if the light does not go off, or if it come on in conjunction with the ABS light, then there is a fault in the system. <br> The common reasons are:</p>
+       <ul>
+        <li>ABS wheel speed sensor</li>
+        <li>ABS pump</li>
+        <li>ABS modulator</li>
+        <li>Incorrect tire size</li>
+        <li>Electrical issues</li>
+      </ul>
+      <h3>We Recommend</h3>
+      <p class="recommended">Warning Light is on (Inspection)</p>
+      <h3>How it works</h3>
+      <p>Mechanic will scan the car's computer system to identify the problem. They will provide an inspection report and a repair estimate. If you approve the estimate, they will order the parts and come back to perform repairs.</p>
+      <button class="AddServ">ADD RECOMMENDED SERVICES</button>
+    </div>
+
+
+    <div class="Appointment_airbag_system DELL">
+       <h3>Explanation</h3>
+       <p>This light is the Supplemental Restraint System warning light. This light will illuminate if there is a problem with the airbag system. This means the airbags may not deploy in a collision.
+        <br> The common reasons are:</p>
+       <ul>
+        <li>Defective Airbag module</li>
+        <li>Defective crash sensor</li>
+        <li>Defective rotary coupler</li>
+        <li>Incorrect tire size</li>
+        <li>Electrical issues</li>
+      </ul>
+      <h3>What You Should Do</h3>
+      <p>We recommend that you take the car to a local shop or dealer.</p>
+      <button class="Go_back">GO BACK</button>
+    </div>
+
+
+    <div class="Appointment_Beam_Light DELL">
+       <h3>Explanation</h3>
+       <p>This light lets you know that one of the exterior lights on your vehicle is not functioning properly. Check your headlights, blinkers, brake lights, etc. and book an appointment for replacement of the lights that are not working.
+       </p>
+       <button class="Go_back">GO BACK</button>
+    </div>
+
+
+    <div class="Appointment_car_is_open DELL">
+       <h3>Explanation</h3>
+       <p>If this light is on, one of your doors, the hood, or the trunk of your car is open. Please close the doors properly. The light should automatically turn off after you close the doors properly.
+       </p>
+       <button class="Go_back">GO BACK</button>
+    </div>
+
+
+    <div class="Appointment_catalytic_converte DELL">
+       <h3>Explanation</h3>
+       <p>If this light is on, the catalytic converter may not be working properly. The catalytic converter is a device on your car that takes harmful pollutants like carbon monoxide and converts it into less toxic substance before it is emitted into the air. It is also common that the Check Engine Light will come on at the same time as the Catalytic Converter Light. It's best to pull over and get your car towed to a mechanic who can inspect and diagnose the problem.</p>
+       <h3>What You Should Do</h3>
+      <p>We recommend taking the car to a local shop or dealer.</p>
+      <button class="Go_back">GO BACK</button>
+    </div>
+
+
+
+    <div class="Appointment_Defrost DELL">
+       <h3>Explanation</h3>
+       <p>This light is known as "Rear Window Defrost Indicator Light". It comes on when you activate the defroster. It serves as a reminder that the defroster is on. If you don't want the defroster to be on, you can simply turn the light off.
+       </p>
+       <button class="Go_back">GO BACK</button>
+    </div>
+
+
+    <div class="Appointment_exterior_lights DELL">
+       <h3>Explanation</h3>
+       <p>This is the High Beam Indicator Light. It lets you know that your headlights are turned on to high beam. Only use the high beams in the absence of an oncoming traffic.
+       </p>
+       <button class="Go_back">GO BACK</button>
+    </div>
+
+
+    <div class="Appointment_fog_lights DELL">
+       <h3>Explanation</h3>
+       <p>Once you turn on the fog lights, this indicator light will illuminate on your dashboard to notify you that the fog lights are on. This is not a warning light.
+       </p>
+       <button class="Go_back">GO BACK</button>
+    </div>
+
+
+
+     <div class="Appointment_gas_cap DELL">
+       <h3>Explanation</h3>
+       <p>This light indicates that the gas cap is not properly tightened. The Check Engine Light may also come on if the gas cap is left loose. We recommend that you tighten the gas cap. If that does not solve the problem and the check engine light is also on, we suggest that you book an appointment for inspection.</p>
+      <h3>We Recommend</h3>
+      <p class="recommended">Warning Light is on (Inspection)</p>
+      <button class="AddServ">ADD RECOMMENDED SERVICES</button>
+    </div>
+
+
+    <div class="Appointment_Overdrive DELL">
+       <h3>Explanation</h3>
+       <p>This is the Overdrive indicator light, not a warning light (it's ok for the light to be ON). An overdrive is a mechanical gear system that the transmission uses to provide your car with better gas mileage at higher speeds. If your overdrive light is on, the overdrive is not selected or engaged. If the overdrive light is off, overdrive is actively engaged.<br>If the light is flashing or blinking, then you have a problem within the overdrive system or transmission.</p>
+       <h3>What You Should Do</h3>
+      <p>We recommend that you take the car to a local dealer or shop.</p>
+      <button class="Go_back">GO BACK</button>
+    </div>
+
+
+    <div class="Appointment_Reduced_Power DELL">
+       <h3>Explanation</h3>
+       <p>This light is known as "Reduced Power Warning Light". It comes on when the engine power output is lower than normal. The loss of power could be due to a variety of reasons, including failure of a sensor in engine or transmission. We do not recommend driving the car when the light is on.</p>
+      <h3>We Recommend</h3>
+      <p class="recommended">Warning Light is on (Inspection)</p>
+      <h3>How it works</h3>
+      <p>Mechanic will scan the car's computer systemto identify the problem. They will provide an inspection report and a repair estimate.</p>
+      <button class="AddServ">ADD RECOMMENDED SERVICES</button>
+    </div>
+
+
+    <div class="Appointment_seat_belt DELL">
+       <h3>Explanation</h3>
+       <p>The seat belt warning light will turn on once the ignition is started and will blink if the seat belts need to be fastened. Some vehicles also emit an audio warning while the light is blinking. However, if the seat belts are fastened but the light is still on or blinking, there is a fault detected in one of the seat belts. It's best to have a mechanic check the car for you.</p>
+       <h3>What You Should Do</h3>
+      <p>We recommend taking the car to a local dealer.</p>
+      <button class="Go_back">GO BACK</button>
+    </div>
+
+
+    <div class="Appointment_Transmission_Temperature DELL">
+       <h3>Explanation</h3>
+       <p>This light is the Transmission Temperature Warning Light. It indicates that the transmission is running at a very high temperature (transmission fluid is too hot). We recommend that you do not drive the car with this light on.</p>
+       <h3>What You Should Do</h3>
+      <p>We recommend that you take the car to a local transmission shop.
+      </p>
+      <button class="Go_back">GO BACK</button>
+    </div>
+
+
+    <div class="Appointment_Washer_fluid DELL">
+       <h3>Explanation</h3>
+       <p>This light is known as "Washer fluid reminder light". It comes on when the washer fluid is low in your car. Washer fluid is used for cleaning the windshield. You can top off the fluid yourself or have your mechanic top it off during your next service.
+       </p>
+       <button class="Go_back">GO BACK</button>
+    </div>
+ 
+
+  </div>
+
+
+  <div class="By_service">
+  	<div class="top_line">
+  		<div class="chkbody">
+	        <div class="chrcircle" onclick="Move();"></div>
+	     </div>
+	     <p class="chk">Check Engine Light is on (Inspection)</p>
+	     <div class="deta">
+	     	<p class="detailsP" data-target="#info_select_service" data-toggle="modal">Details</p>
+	     	<img src="img/delate_ico.png" alt="" class="delateImg">
+	     </div>
+	     
+  	</div>
+  	<div class="top_body">
+  		<p>The check engine light comes on when the engine management system has detected faults in the engine or transmission. The problem can be as simple as a loose gas cap or as complex as internal engine damage.</p>
+  		<button class="btn">CONTINUE</button>
+  	</div>
+  </div>
+
+
+</div>
+
+
+<div class="faq">
+	<h2>Are you stuck or in need of assistance?</h2>
+	<p class="ptit">Our customer support team is here to assist you 6AM - 5PM PST everyday.</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<img src="img/faq_call.png" alt="">
+				<p>1-8583-207-0185</p>
+			</div>
+			<div class="col-md-4">
+				<img src="img/faq_write.png" alt="">
+				<p>Chat with customer support</p>
+			</div>
+			<div class="col-md-4">
+				<img src="img/faq_quest.png" alt="">
+				<p>Frequently asked questions</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="mask"></div>
+
+
+    <!-- Modal -->
+        <div class="modal fade" id="info_select_service" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog ">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                
+              </div>
+              <div class="modal-body">
+               <div class="row">
+                 <h2>What does Check Engine Light is on entail</h2>
+                 <p>The mechanic will be able to remotely connect to your car <span>(if you have our scanner and paid license to use)</span> to determine the source and cause of lit check engine light and then test other system components as identifying specific symptoms and problems. After inspection, the mechanic will provide a detailed report that describes the diagnosis, along with the volume and cost of the necessary repairs.</p>
+               </div>
+
+               <div class="row">
+                 <h2>Keep in mind</h2>
+                 <p class="plp">The Check Engine Light can illuminate for minor issues. The most common and easiest to resolve is a loose gas cap. Almost every vehicle that does not have a dedicated light for a loose gas cap will light up the Check Engine Light when the problem occurs. Simply tighten the cap until it clicks two or three times to take care of the issue. After you tighten the cap, the car should be switched off and turned back on two or three times. If the Check Engine Light still has not gone out, there is a problem that must be diagnosed by a professional mechanic.</p>
+               </div>
+
+               <div class="row">
+                 <h2>How it's done</h2>
+                 <p class="plp">When the Check Engine Light is on, your car’s monitoring system will have "fault codes" that indicate the nature of the problem. Your car may have one or more problems and hence there can be multiple codes. The mechanic will read the codes using a scanner, interpret the codes, and provide a diagnosis. If you approve the repair estimate, they will replace the faulty part(s), clear the memory of any fault codes, turn the Check Engine Light off, and let you drive the car for a few days to see if the light comes back on or not. Please note: It may take several days of driving the car for the monitoring system to verify that the repair has fixed all the problems. If the monitoring system fails any of its internal tests, it will turn the light back on. This means that the car has more problems that were not evident during the first evaluation. The mechanic will have to perform further diagnosis and create new repair estimates for resolving the problems found. In some rare cases, multiple visits may be required to diagnose and resolve the stubborn Check Engine Light issues.</p>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal fade" id="Price_breakdown" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog ">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2>Price breakdown of your quote</h2>
+				
+				<p class="labor">Labor</p>
+				<p>Check Engine Light is on (Inspection)</p>
+
+				<div class="Labor_fees">
+					<p class="descript">Labor fees</p>
+					<p class="priceP">$70.00</p>
+				</div>
+
+				<div class="div_total">
+					<p class="pTOTAL">TOTAL</p>
+					<span class="priceTOTAL">$70,00</span>
+				</div>
+
+              </div>
+              <div class="modal-body">
+               <div class="row">
+                 <h2>How do we provide our fair estimates?</h2>
+                 <p>The RavenX Fair Price Calculator is based on decades' worth of auto repair data and the industry standard labor guide. We give you a fair and transparent labor price quote based on the industry standard for that service, you pay the same price whether it takes more or less time for the mechanic to complete that service. The parts price is determined by the provided vehicle information, and is subject to change if there are special requests, changes in vehicle specifications or parts brands, addition or deletion of parts, or due to other restrictions.</p>
+               </div>
+
+               <div class="row">
+                 <h2>Frequently asked questions about price</h2>
+                 <div class="panel-group" id="accordion">
+					  <div class="panel panel-default">
+					    <div class="panel-heading">
+					      <h4 class="panel-title">
+					           <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="a_click" onclick="openPanel();">
+					            What is your hourly rate?
+					           </a>
+					        </h4>
+					         <span><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="openPanel();">+</a></span>
+					    </div>
+					    <div id="collapseOne" class="panel-collapse collapse in">
+					      <div class="panel-body">
+					        We don’t charge for our services based on time. We give you a fair and transparent labor price quote, and you pay the same price whether it takes less or more time for the mechanic to complete the service. We calculate the price based on an estimated time and we apply a labor rate that varies by city -- it can be anywhere between $60 - $90 depending on where you live.
+					      </div>
+					    </div>
+					  </div>
+					  <div class="panel panel-default">
+					    <div class="panel-heading">
+					      <h4 class="panel-title">
+					              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="a_click" onclick="openPanel();">
+					                What if the mechanic finds that my car needs more or less services than I had requested?
+					              </a>
+					          </h4>
+					             <span><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="openPanel();">+</a></span>
+					    </div>
+					    <div id="collapseTwo" class="panel-collapse collapse">
+					      <div class="panel-body">
+					       You’re always in control. If our mechanic finds your car doesn’t need all the services you requested, we’ll remove those unneeded services and lower your bill, right on the spot. If your car needs additional repair services, our mechanic will provide you with an itemized list of what you need. You can decide to accept or decline those additional services.
+					      </div>
+					    </div>
+					  </div>
+					  <div class="panel panel-default">
+					    <div class="panel-heading">
+					      <h4 class="panel-title">
+					              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="a_click" onclick="openPanel();">
+					               Is it more expensive than going to shops and dealers?
+					              </a>
+					            </h4>
+					             <span><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" onclick="openPanel();">+</a></span>
+					    </div>
+					    <div id="collapseThree" class="panel-collapse collapse">
+					      <div class="panel-body">
+					       As a network of remote diagnostics, we don’t have overhead costs like shops and dealers. We are able to negotiate better pricing from parts vendors than independent local garages. The bigger the service, the more you save. And of course, you will always get a fair and transparent price before you book a service.
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				                 
+               </div>
+
+              
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      
+    </script>
+    <script>
+      new WOW().init();
+    </script>
+    <script>
+      $(document).ready(function(){
+          $("nav").on("click","a", function (event) {
+            //отменяем стандартную обработку нажатия по ссылке
+            event.preventDefault();
+
+            //забираем идентификатор бока с атрибута href
+            var id  = $(this).attr('href'),
+
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+              top = $(id).offset().top;
+            
+            //анимируем переход на расстояние - top за 1500 мс
+            $('body,html').animate({scrollTop: top}, 1500);
+          });
+        });
+    </script>
+    <script src = "js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1331 @@
+/*============    ШРИФТЫ    ===========*/
+@font-face{
+	font-family: "KickHornet";
+	src:url("../fonts/KickHornet.eot");
+	src:url("../fonts/KickHornet.eot&#iefix") format("embedded-opentype"),
+		url("../fonts/KickHornet.woff") format("woff"),
+		url("../fonts/KickHornet.ttf") format("treutype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Roboto-Bold";
+	src:url("..//fonts/Roboto-Bold.eot");
+	src:url("..//fonts/Roboto-Bold.eot&#iefix") format("embedded-opentype"),
+		url("..//fonts/Roboto-Bold.woff") format("woff"),
+		url("..//fonts/Roboto-Bold.ttf") format("treutype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Roboto-Medium";
+	src:url("..//fonts/Roboto-Medium.eot");
+	src:url("..//fonts/Roboto-Medium.eot&#iefix") format("embedded-opentype"),
+		url("..//fonts/Roboto-Medium.woff") format("woff"),
+		url("..//fonts/Roboto-Medium.ttf") format("treutype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Roboto-Regular";
+	src:url("..//fonts/Roboto-Regular.eot");
+	src:url("..//fonts/Roboto-Regular.eot&#iefix") format("embedded-opentype"),
+		url("..//fonts/Roboto-Regular.woff") format("woff"),
+		url("..//fonts/Roboto-Regular.ttf") format("treutype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Roboto-Light";
+	src:url("..//fonts/Roboto-Light.eot");
+	src:url("..//fonts/Roboto-Light.eot&#iefix") format("embedded-opentype"),
+		url("..//fonts/Roboto-Light.woff") format("woff"),
+		url("..//fonts/Roboto-Light.ttf") format("treutype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Roboto-Condensed";
+	src:url("..//fonts/Roboto-Condensed.eot");
+	src:url("..//fonts/Roboto-Condensed.eot&#iefix") format("embedded-opentype"),
+		url("..//fonts/Roboto-Condensed.woff") format("woff"),
+		url("..//fonts/Roboto-Condensed.ttf") format("treutype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*============    ГЛАВНЫЙ ЭКРАН    ===========*/
+body{
+	background-color: #f1f5f8;
+}
+
+
+aside{
+	height: 100vh;
+	width: 20%;
+	position: fixed;
+	background-color: #112a4b;
+	float: left;
+	h1{
+		font-family: KickHornet;
+		color: #57bcfc;
+		text-align: center;
+		margin-bottom: 50px;
+		margin-top: 50px;
+		span{
+			color: red;
+		}
+	}
+	h6{
+		color: #ffffff;
+		font-size: 14px;
+		margin-left: 40px;
+		margin-bottom:20px;
+		a{
+			text-decoration: none;
+			color: #828b96;
+			&:hover{
+				text-decoration: none;
+				color: #fff;
+			};
+		}
+	}
+	ul{
+		list-style: none;
+		li{
+			margin-top: 10px;
+			a{
+				color: #828b96;
+				font-size: 14px;
+				text-decoration:none;
+				margin: 0;
+				font-family: Roboto-Light;
+				&:hover{
+					text-decoration: none;
+					color: #fff;
+				};
+			}
+			a.active{
+				color: #fff;
+				&:hover{
+					text-decoration: none;
+				};
+			}
+			hr{
+				border-top: 1px solid #1a365a;
+				color: #1a365a;
+			}
+			.calcCar, .calcRecomendedServises{
+				float: right;
+				width: 15px;
+				height: 15px;
+				margin-right: 10px;
+				background-color: #1c7ad5;
+				span{
+					display: block;
+					font-size: 10px;
+					text-align: center;
+					color: #fff;
+					padding-top: 1.9px;
+				}
+			}
+		}
+	}
+	a.btn{
+		margin-left: 40px;
+		padding: 0;
+		text-align: center;
+		padding: 10px 40px;
+		border: 1px solid #517196;
+		color: #fff;
+		text-align: center;
+		margin-top: 40px;
+		&:hover{
+			color: #fff;
+			border: 1.3px solid #fff;
+			text-decoration: none;
+		};
+
+	}
+}
+
+.openUser{
+	display: none;
+	width: 240px;
+	height: 150px;
+	position: absolute;
+	right: 30px;
+	top: 50px;
+	box-shadow: 1px 1px 15px #909497;
+	z-index: 9999;
+	background-color: #fff;
+	ul{
+		list-style: none;
+		li{
+			margin-top: 5px;
+			&:last-child{
+				margin-bottom: 10px;
+			};
+			a{
+				font-size: 16px;
+				text-decoration: none;
+				color: #909497;
+				&:hover{
+					color: #46484a;
+				};
+			}
+		}
+	}
+}
+
+
+header{
+	background-color: #fff;
+	width: 80%;
+	height: 50px;
+	z-index: 999;
+	float: left;
+	position: relative;
+	left: 20%;
+	.top_line{
+		position: absolute;
+		width: 100%;
+		text-align: right;
+		margin-top: 20px;
+		margin-bottom: 300px;
+		border-bottom: 1px solid #ececec;
+		ul{
+			li{
+				border-left: 1px solid #ececec;
+				width: 170px;
+				text-align: center;
+				a{
+					font-family: Roboto-Regular;
+					font-size: 13px;
+				}
+				&:first-child{
+					border-left: none;
+				};
+			}
+		}
+		a{
+			text-decoration: none;
+			color: #a8a7a7;
+			&:hover{
+				text-decoration: none;
+				color: #464646;
+			};
+			i{
+				margin-left: 10px;
+			}
+		}
+	}
+	
+}
+
+.bottom_line_settings{
+		position: relative;
+		/*border: 1px solid red;*/
+		padding-top: 15px;
+		padding-left: 40px;
+		left: 20%;
+		width: 80%;
+		float: left;
+		background-color: #fff;
+		h1.H1Cars{
+			margin-top: 30px;
+		}
+		h1{
+			font-family: Roboto-Bold;
+		}
+		button.H1Cars{
+			margin-top: 17px;
+			margin-right: 15px;
+		}
+		ul{
+			li{
+				a{
+					color: #525456;
+					text-decoration: none;
+					text-transform: uppercase;
+					padding: 10px 20px 20px 20px;
+					border: none;
+					border-bottom: 1px solid transparent;
+					background-color: transparent;
+					font-family: Roboto-Regular;
+					/*&:hover{
+						border-bottom: 2px solid #577cae;
+					};*/
+				}
+				a.active{
+					border-bottom: 2px solid #577cae;
+				}
+			}
+	}	
+}
+
+
+.bottom_line_settings{
+	height: 120px;
+	h1{
+		margin-top: 0px;
+		margin-bottom: 30px;
+		font-size: 32px;
+	}
+
+	button{
+		right: 20px;
+		top: 25px;
+		position: absolute;
+		border-radius: 30px;
+		border: 1px solid #b9baba;
+		background-color: transparent;
+		padding: 15px 25px;
+		text-transform: uppercase;
+		color: #585858;
+		&:hover{
+			border: 1px solid #576371;
+		};
+	}
+	.filter{
+		float: right;
+		margin-top: -70px;
+		select{
+			margin-right: 40px;
+			width: 150px;
+			height: 40px;
+			border: 1px solid #e9e5e5;
+			border-radius: 4px;
+			margin-left: 20px;
+		}
+	}
+	
+}
+
+a{
+	color: #373d51;
+	&:hover{
+		color: #373d51;
+	};
+}
+
+.CarIsAdd{
+
+	background-color: #fff;
+	width: 55%;
+	max-width: 1200px;
+	height: 230px;
+	z-index: 99;
+	float: left;
+	position: relative;
+	left: 22%;
+	top: 50px;
+	margin-bottom: 25px;
+	margin-right: 100%;
+	padding-top: 0px;
+	padding-right: 20px;
+	border: 1px solid #e5e8ea;
+	border-radius: 4px;
+	text-align: center;
+
+	-webkit-transition: all ease-out 0.3s;
+     -moz-transition: all ease-out 0.3s;
+     -o-transition: all ease-out 0.3s;
+     transition: all ease-out 0.3s;
+	&:hover{
+		box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.1);
+		cursor: pointer;
+	};
+	.view{
+		width: 30%;
+		position: absolute;
+		.logo_car{
+			width: 100%;
+			text-align: center;
+			overflow: hidden;
+			height: 140px;
+		}
+		img{
+			margin: 0;
+			padding: 0;
+			left: 0;
+			margin-left: 0px;
+			float: none;
+			margin-top: 50px; 
+			margin-bottom: 20px;
+		}
+		button.btn{
+			padding: 10px 20px;
+			border-radius: 4px;
+			border: 1px solid #e9e5e5;
+			text-transform: uppercase;
+			background-color: transparent;
+			color: #525253;
+			font-family: Roboto-Medium;
+			-webkit-transition: all ease-out 0.5s;
+		    -moz-transition: all ease-out 0.5s;
+		    -o-transition: all ease-out 0.5s;
+		    transition: all ease-out 0.5s;
+			margin-top: 20px;
+			&:hover{
+				border: 1px solid #a8a8a8;
+				color: #565656;
+				background-color: #e8e8e8; 
+			};
+		}
+	}
+
+	.infoCar{
+		border-right: 1.1px solid #c0bfbf;
+		width: 37%;
+		display: inline-block;
+		margin-left: 70px;
+		margin-top: 25px;
+		text-align: left;
+		padding-top: 0px;
+		h2.marcCar{
+			text-align: left;
+			padding: 0;
+			margin: 0;
+			margin-bottom: 0px;
+			font-family: Roboto-Bold;
+			font-size: 26px;
+		}
+		h2.trimCar{
+			margin: 0;
+			padding: 0;
+			font-family: Roboto-Bold;
+			font-size: 26px;
+			height: 40px;
+		}
+	}
+
+	table{
+		tr{
+			td{
+				width: 180px;
+			}
+		}
+	}
+
+	.conection{
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		right: 55px;
+		position: absolute;
+		top: 50px;
+		text-align: center;
+		p.conP{
+			margin: 0;
+			margin-top: 10px;
+			padding: 0;
+			font-family: Roboto-Regular;
+			color: #7e7e7e;
+			line-height: 14px;
+			font-size: 11px;
+		}
+		button.connected{
+			background-color: #ebeef1;
+			border: none;
+			padding: 10px 25px;
+			border-radius: 30px;
+			color: #464647;
+			font-family: Roboto-Medium;
+			margin-top: 10px;
+			text-transform: uppercase;
+		}
+		button.disconnect{
+			padding: 10px 25px;
+			border-radius: 30px;
+			border: 1px solid #0a3977;
+			background-color: transparent;
+			font-family: Roboto-Medium;
+			margin-top: 10px;
+			text-transform: uppercase;
+			color: #112a4b;
+		}
+
+
+	}
+	.mechanics_info{
+		position: absolute;
+		background-color: #fff;
+		margin-left: 103%;
+		height: 100%;
+		width: 35%;
+		top: 0;
+		text-align: center;
+		padding-left: 5px;
+		padding-top: 25px;
+		border: 1px solid #e8eaec;
+		border-radius: 3px;
+		z-index: 9999;
+		-webkit-transition: all ease-out 0.3s;
+	    -moz-transition: all ease-out 0.3s;
+	    -o-transition: all ease-out 0.3s;
+	    transition: all ease-out 0.3s;
+		&:hover{
+			box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.1);
+			cursor: pointer;
+		};
+		.mechanic_photo{
+			width: 55px;
+			height: 55px;
+			border-radius: 50%;
+			overflow: hidden;
+			float: left;
+			margin-right: 20px;
+			margin-left: 20px;
+		}
+		h4{
+			margin-bottom: 0;
+			padding: 0;
+			color: #4c4c4c;
+			font-family: Roboto-Medium;
+			text-align: left;
+		}
+		p{
+			margin-top: 0;
+			font-size: 12px;
+			font-family: Roboto-Regular;
+			color: #999a9b;
+			margin-bottom: 0;
+			text-align: left;
+		}
+		img.rating{
+			margin-left: -125px;
+		}
+		ul.mechanic_stat{
+			margin-top: 15px;
+			border: 1px solid #f3f3f3;
+
+			li{
+				/*width: 90px;*/
+				width: 32%;
+				height: 45px;
+				text-align: center;
+				padding: 0;
+				margin: 0;
+				border-left:  1px solid #f3f3f3;
+				vertical-align: middle;
+
+				
+
+				a{
+					font-size: 11px;
+					line-height: 12px;
+					color: #818181;
+					padding-top: 10px;
+					text-align: center;
+					p{
+						margin-top: 5px;
+						text-align: center;
+					}
+				}
+				&:nth-child(1){
+					a{
+						p{
+							margin-top: 10px;
+						}
+					}
+				};
+			}
+			.first{
+				border-left: none;
+			};
+		}
+		button.chat{
+			padding: 5px 40px;
+			border: 1.2px solid #f5f3f3;
+			border-radius: 3px;
+			background-color: transparent;
+			text-transform: uppercase;
+			margin-top: 10px;
+			&:hover{
+				background-color: rgba(69, 69, 69, .2);
+			};
+		}
+		button.call{
+			padding: 5px 40px;
+			border: 1.2px solid #1c7ad5;
+			border-radius: 3px;
+			background-color: #1c7ad5;
+			color: #fff;
+			text-transform: uppercase;
+			margin-top: 10px;
+			&:hover{
+				background-color: #44a4f6;
+			};
+		}
+	}
+}
+.СON{
+	border-bottom: 2px solid #439bd3;
+}
+
+
+/*============    	АДАПТИВ    ===========*/
+
+.dropdown-toggle{
+	padding: 5px;
+	display: inline-block;
+	text-align: center;
+	float: left;
+	i{
+		font-size: 40px;
+	}
+}
+
+.MenuUser{
+	right: 0;
+	position: absolute;
+	top: 0;
+	.dropdown-menu{
+		margin-left: -150px;
+	}
+}
+
+@media(min-width:0px) and (max-width:320px) {
+	header{
+		display: none;
+	}
+ 
+
+	aside{
+		display: none;
+	}
+	header, .bottom_line, .bottom_line_settings{
+		left: 0;
+		width: 100%;
+	}
+	header{
+		background-color: transparent;
+		margin-bottom: 30px;
+		.top_line{
+			border: none;
+			text-align: center;
+			ul{
+				li{
+					border: none;
+				}
+			}
+		}
+	}
+	.CarIsAdd{
+		left: 0;
+		width: 60%;
+		height: 320px;
+		padding-right: 5px;
+		text-align: center;
+
+		img{
+			display: none;
+		}
+		
+		.view{
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			.logo_car{
+				height: 100%;
+			}
+			button.btn{
+				font-size: 12px;
+				margin-top: 90%;
+				bottom: 0;
+				padding: 5px 10px;
+			}
+		}
+		.infoCar{
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			border: none;
+			table{
+				tr{
+					td{
+						font-size: 11px;
+						text-align: left;
+						margin-left: 20px;
+						padding-left: 10px;
+					}
+				}
+			}
+			h2.marcCar, h2.trimCar{
+				font-size: 14px;
+				text-align: center;
+			}
+		}
+		.conection{
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100px;
+			position: absolute;
+			left: 0;
+			p.conP{
+				margin-top: 160px;
+				
+				text-align: center;
+				width: 100%;
+			}
+			button.connected{
+				
+			}
+		} 
+		.mechanics_info{
+			width: 60%;
+			h4{
+				font-size: 13px;
+				text-align: center;
+			}
+			p.descript_mechanic{
+				font-size: 10px;
+				text-align: center;
+			}
+			img{
+				display: block;
+			}
+			img.rating{
+				margin: 0;
+			}
+			ul.mechanic_stat{
+				border: none;
+				li{
+					width: 100%;
+					height: 30px;
+					border: none;
+					a{
+						p{
+							font-size: 10px;
+						}
+						font-size: 10px;
+					}
+				}
+			}
+			button.chat, button.call{
+				padding: 5px 7px;
+				font-size: 11px;
+			}
+		}
+	}
+	.bottom_line{
+		overflow: hidden;
+		width: 100%;
+		margin-top: 50px;
+		.user{
+			margin-left: 0;
+			h1{
+				font-size: 14px;
+			}
+		}
+		.give{
+			display: none;
+		}
+		.recommended_servises{
+			margin-left: 0;
+			border: none;
+			display: none;
+		}
+	}
+
+	.bottom_line_settings{
+		text-align: center;
+		padding-left: 0;
+		.filter {
+			select{
+				text-align: center;
+				margin-top: 70px;
+			}
+
+		}
+		h1{
+			font-size: 14px;
+		}
+		ul{
+			li{
+				a{
+					font-size: 12px;
+					border: none;
+					padding: 0;
+					&:hover{
+						border: none;
+					};
+				}
+			}
+			li.active{
+				border: none;
+			}
+		}
+		h1.H1Cars{
+			font-size: 16px;
+			margin-top: 0px;
+		}
+
+		button.H1Cars{
+			margin: 40px auto;
+			left: 0px;
+			right: 0;
+			display: block;
+			width: 70%;
+		}
+	}
+}
+
+@media(min-width:321px) and (max-width:480px) {
+
+	
+
+	aside,header{
+		display: none;
+	}
+	header, .bottom_line{
+		left: 0;
+		width: 100%;
+	}
+
+	header, .bottom_line, .bottom_line_settings{
+		left: 0;
+		width: 100%;
+	}
+	header{
+		background-color: transparent;
+		margin-bottom: 30px;
+		.top_line{
+			border: none;
+			text-align: center;
+			ul{
+				li{
+					border: none;
+					a{
+						font-size: 14px;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+	.bottom_line{
+		overflow: hidden;
+		width: 100%;
+		margin-top: 50px;
+		.user{
+			margin-left: 0;
+			h1{
+				font-size: 14px;
+			}
+		}
+		.give{
+			display: none;
+		}
+		.recommended_servises{
+			margin-left: 0;
+			border: none;
+			display: none;
+		}
+	}
+
+	.bottom_line_settings{
+		text-align: center;
+		padding-left: 0;
+		.filter {
+			select{
+				text-align: center;
+				margin-top: 70px;
+			}
+
+		}
+		h1{
+			font-size: 14px;
+		}
+		ul{
+			li{
+				a{
+					font-size: 12px;
+					border: none;
+					padding: 0;
+					&:hover{
+						border: none;
+					};
+				}
+			}
+			li.active{
+				border: none;
+			}
+		}
+		h1.H1Cars{
+			font-size: 16px;
+			margin-top: 0px;
+		}
+
+		button.H1Cars{
+			margin: 40px auto;
+			left: 0px;
+			right: 0;
+			display: block;
+			width: 70%;
+		}
+	}
+	.CarIsAdd{
+		left: 0;
+		width: 60%;
+		height: 320px;
+		padding-right: 5px;
+		text-align: center;
+		img{
+			display: none;
+		}
+		
+		.view{
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			.logo_car{
+				height: 100%;
+			}
+			button.btn{
+				font-size: 12px;
+				margin-top: 160px;
+				bottom: 0;
+				padding: 5px 10px;
+			}
+		}
+		.infoCar{
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			border: none;
+			table{
+				tr{
+					td{
+						font-size: 11px;
+						text-align: left;
+						margin-left: 20px;
+						padding-left: 10px;
+					}
+				}
+			}
+			h2.marcCar, h2.trimCar{
+				font-size: 14px;
+				text-align: center;
+			}
+		}
+		.conection{
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100px;
+			position: absolute;
+			left: 0;
+			p.conP{
+				margin-top: 160px;
+				
+				text-align: center;
+				width: 100%;
+			}
+			button.connected{
+				
+			}
+		} 
+		.mechanics_info{
+			width: 60%;
+			h4{
+				font-size: 13px;
+				text-align: center;
+			}
+			p.descript_mechanic{
+				font-size: 10px;
+				text-align: center;
+			}
+			img{
+				display: block;
+			}
+			img.rating{
+				margin: 0;
+			}
+			ul.mechanic_stat{
+				border: none;
+				li{
+					width: 100%;
+					height: 30px;
+					border: none;
+					a{
+						p{
+							font-size: 10px;
+						}
+						font-size: 10px;
+					}
+				}
+			}
+			button.chat, button.call{
+				padding: 5px 7px;
+				font-size: 11px;
+			}
+		}
+	}
+
+}
+
+@media(min-width:481px) and (max-width:768px) {
+
+
+
+	aside, header{
+		display: none;
+	}
+	header, .bottom_line{
+		left: 0;
+		width: 100%;
+	}
+
+	header, .bottom_line, .bottom_line_settings{
+		left: 0;
+		width: 100%;
+	}
+	header{
+		background-color: transparent;
+		margin-bottom: 30px;
+		.top_line{
+			border: none;
+			text-align: center;
+			ul{
+				li{
+					border: none;
+					width: 110px;
+					a{
+						font-size: 14px;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+	.bottom_line{
+		overflow: hidden;
+		width: 100%;
+		margin-top: 50px;
+		.user{
+			margin-left: 0;
+			h1{
+				font-size: 14px;
+			}
+		}
+	}
+	.CarIsAdd{
+			left: 0;
+			width: 60%;
+			height: 320px;
+			padding-right: 5px;
+			text-align: center;
+			img{
+				display: none;
+			}
+			
+			.view{
+				width: 100%;
+				padding: 0;
+				margin: 0;
+				.logo_car{
+					height: 100%;
+				}
+				button.btn{
+					font-size: 12px;
+					margin-top: 160px;
+					bottom: 0;
+					padding: 5px 10px;
+				}
+			}
+			.infoCar{
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				text-align: center;
+				border: none;
+				table{
+					tr{
+						td{
+							font-size: 11px;
+							text-align: left;
+							margin-left: 20px;
+							padding-left: 10px;
+						}
+					}
+				}
+				h2.marcCar, h2.trimCar{
+					font-size: 14px;
+					text-align: center;
+				}
+			}
+			.conection{
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				height: 100px;
+				position: absolute;
+				left: 0;
+				p.conP{
+					margin-top: 160px;
+					
+					text-align: center;
+					width: 100%;
+				}
+				button.connected{
+					
+				}
+			} 
+			.mechanics_info{
+				width: 60%;
+				h4{
+					font-size: 13px;
+					text-align: center;
+				}
+				p.descript_mechanic{
+					font-size: 10px;
+					text-align: center;
+				}
+				img{
+					display: block;
+				}
+				img.rating{
+					margin: 0;
+				}
+				ul.mechanic_stat{
+					border: none;
+					li{
+						width: 100%;
+						height: 30px;
+						border: none;
+						a{
+							p{
+								font-size: 13px;
+							}
+						}
+					}
+				}
+				button.chat, button.call{
+					padding: 10px 17px;
+					font-size: 11px;
+				}
+			}
+	}
+
+}
+
+@media(min-width:768px) and (max-width:768px){
+	.AddCard{
+		left: 0;
+		width: 100%;
+	}
+	header{
+		display: block;
+		.top_line{
+			ul{
+				li{
+					width: 150px;
+					a{
+						font-size: 13px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(min-width:769px) and (max-width:992px) {
+	aside{
+		display: none;
+	}
+
+	header, .bottom_line{
+		left: 0;
+		width: 100%;
+	}
+	header, .bottom_line, .bottom_line_settings{
+		left: 0;
+		width: 100%;
+	}
+	header{
+		background-color: transparent;
+		margin-bottom: 30px;
+		.top_line{
+			border: none;
+			text-align: center;
+			ul{
+				li{
+					border: none;
+					width: 160px;
+					a{
+						font-size: 14px;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+
+	.CarIsAdd{
+			left: 0;
+			width: 60%;
+			height: 320px;
+			padding-right: 5px;
+			text-align: center;
+			img{
+				display: none;
+			}
+			
+			.view{
+				width: 100%;
+				padding: 0;
+				margin: 0;
+				.logo_car{
+					height: 100%;
+				}
+				button.btn{
+					font-size: 12px;
+					margin-top: 160px;
+					bottom: 0;
+					padding: 5px 10px;
+				}
+			}
+			.infoCar{
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				text-align: center;
+				border: none;
+				table{
+					tr{
+						td{
+							font-size: 11px;
+							text-align: left;
+							margin-left: 20px;
+							padding-left: 10px;
+						}
+					}
+				}
+				h2.marcCar, h2.trimCar{
+					font-size: 14px;
+					text-align: center;
+				}
+			}
+			.conection{
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				height: 100px;
+				position: absolute;
+				left: 0;
+				p.conP{
+					margin-top: 160px;
+					
+					text-align: center;
+					width: 100%;
+				}
+				button.connected{
+					
+				}
+			} 
+			.mechanics_info{
+				width: 60%;
+				h4{
+					font-size: 13px;
+					text-align: center;
+				}
+				p.descript_mechanic{
+					font-size: 10px;
+					text-align: center;
+				}
+				img{
+					display: block;
+				}
+				img.rating{
+					margin-left: 150px;
+				}
+			
+				button.chat, button.call{
+					margin-top: 50px;
+					padding: 10px 37px;
+					font-size: 14px;
+				}
+			}
+	}
+
+	
+}
+
+
+@media(min-width:993px) and (max-width:1366px) {
+	
+
+	
+	.CarIsAdd{
+		.infoCar{
+			margin-left: 50px;
+			padding-right: 9px;
+			h2.marcCar, h2.trimCar{
+				font-size: 18px;
+			}
+		}
+		.view{
+			button.btn{
+				padding: 10px 5px;
+				font-size: 12px;
+			}
+		} 
+		.conection{
+			right: 0%;
+		}
+		.mechanics_info{
+			img.rating{
+				margin-right: -90px;
+			}
+			ul.mechanic_stat{
+				margin: 0;
+				padding: 0;
+				li{
+					width: 28%;
+				}
+			}
+			p{
+				font-size: 8px;
+			}
+			button.chat, button.call{
+				padding: 5px 10px;
+			}
+		
+		}
+	} 
+	
+	aside{
+		br{
+			display: block;
+		}
+		a.btn{
+			padding: 10px 25px;
+			margin-left: 0;
+		}
+	}
+	
+	.bottom_line{
+			overflow: hidden;
+			width: 80%;
+			/*margin-top: 50px;*/
+			.user{
+				margin-left: 0;
+				h1{
+					font-size: 14px;
+				}
+			}
+	}
+	
+}
+
+

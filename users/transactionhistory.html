@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Заголовок </title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <aside>
+      <div class="container-fluid">
+        <h1>Raven <span>X</span></h1>
+        <h6><a href="settings/dashboard.html">Dashboard</a></h6>
+        <ul>
+          <li><a href="cars.html">My cars</a> <!-- <div class="calcCar"><span id = "calcCarspan">2</span></div>  --></li>
+          <li><a href="appointments.html">Appointments</a></li>
+          <li><a href="quotes.html">Quotes</a></li>
+          <li><a href="recommendedservices.html">Recommended <br> Services</a><!-- <div class="calcRecomendedServises"><span id = "calcRecomendedServisesSpan"></span></div> --></li>
+          <li><a href="advice.html">Advice</a></li>
+          <li><a href="mymechanics.html">My  mechanics</a></li>
+          <li><a href="gifts&cupons.html" >Gifts & Coupons</a></li>
+          <li><hr></li>
+          <li><a href="#" class="active">Billing & Payments</a></li>
+        </ul>
+        <a href="../qoute/quote.html" class="btn">GET A NEW QUOTE</a>
+      </div>
+    </aside>
+
+    <nav class="visible-xs visible-sm">
+      <div class="container">
+        <div class="col-xs-5 ">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars"></i></a>
+            <ul class="dropdown-menu text-right">
+             <li><a href="cars.html">My cars</a> <div class="calcCar"><span id = "calcCarspan"></span></div></li>
+              <li><a href="appointments.html">Appointments</a></li>
+              <li><a href="quotes.html">Quotes</a></li>
+              <li><a href="recommendedservices.html">Recommended <br> Services</a><div class="calcRecomendedServises"><span id = "calcRecomendedServisesSpan"></span></div></li>
+              <li><a href="advice.html">Advice</a></li>
+              <li><a href="mymechanics.html">My mechanics</a></li>
+              <li><a href="gifts&cupons.html">Gifts & Coupons</a></li>
+              <li><hr></li>
+              <li><a href="#" class="active"> Billing & Payments</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="visible-xs MenuUser">
+      <div class="container">
+        <div class="col-xs-5 ">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+           <i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+            <ul class="dropdown-menu text-right">
+               <li><a href="gifts&cupons.html">Give 10$ , Get 10$  <i class="fa fa-heart"></i></a></a></li>
+               <li><a href="#">Help  <i class="fa fa-question-circle"></i></a></a></li>
+               <li><a href="#">Notification <i class="fa fa-bell" aria-hidden="true"></i></a></a></li>
+               <li><a href="#" onclick="openuser();">Alina Smith <i class="fa fa-cog" aria-hidden="true"></i></a></a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+  
+    <div class="openUser">
+      <ul>
+        <li><a href="settings/accountsettings.html">Account Settings</a></li>
+        <li><a href="ravenxcredits.html">Gifting & Coupons</a></li>
+        <br>
+      
+        <li><a href="../index.html" class="out">Sing Out</a></li>
+      </ul>
+    </div>
+
+    <div class="openHelp">
+      <h3>CONTACT CUSTOMER SUPPORT</h3>
+      <p>Questions? Contact Service Advisor</p>
+      <p class="tel">1-800-755-6740</p>
+      <p class="writ">ravenxinfo@gmail.com</p>
+    </div>
+
+    <div class="openNotific">
+      <ul class="list-inline">
+        <li class="active MESSAGES" onclick="GoMessage();"><a href="#" >MESSAGES (17)</a></li>
+        <li class=" NOTIFICATION" onclick="GoNotif();"><a href="#">NOTIFICATION (5)</a></li>
+      </ul>
+
+      <div class="Oll_message">
+
+        <div class="message">
+          <div class="user_img">
+            <img src="img/user_photo_1.png" alt="">
+          </div>
+          <div class="user_message">
+            <h3 class="message_title">Hi Alina! I need a carb repair...</h3>
+            <p class="messge_descriptor">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  </p>
+          </div>
+        </div>
+
+        <div class="message">
+          <div class="user_img">
+            <img src="img/ac.png" alt="">
+          </div>
+          <div class="user_message">
+            <h3 class="message_title">Alina when changing the oil?</h3>
+            <p class="messge_descriptor">Lorem ipsum dolor sit amet, </p>
+          </div>
+        </div>
+
+        <div class="message">
+          <div class="user_img">
+            <img src="img/ac.png" alt="">
+          </div>
+          <div class="user_message">
+            <h3 class="message_title">Alina when changing the oil?</h3>
+            <p class="messge_descriptor">Lorem ipsum dolor sit amet, </p>
+          </div>
+        </div>
+
+
+        <div class="message">
+          <div class="user_img">
+            <img src="img/ac.png" alt="">
+          </div>
+          <div class="user_message">
+            <h3 class="message_title">Alina when changing the oil?</h3>
+            <p class="messge_descriptor">Lorem ipsum dolor sit amet, </p>
+          </div>
+        </div>
+
+
+        <div class="SOll">
+          <button>SHOW ALL</button>
+        </div>
+
+      </div>
+
+      <div class="Oll_Notif">
+
+        <div class="notif">
+          <div class="user_img">
+            <img src="img/ac.png" alt="">
+          </div>
+          <div class="notif_message">
+            <h3 class="message_title">Alina when changing the oil?</h3>
+            <p class="messge_descriptor">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
+          </div>
+        </div>
+      
+
+      <div class="notif">
+          <div class="user_img">
+            <img src="img/notif_warning.png" alt="">
+          </div>
+          <div class="notif_message">
+            <h3 class="message_title">Alina when changing the oil?</h3>
+            <p class="messge_descriptor">Lorem ipsum dolor sit amet, </p>
+          </div>
+        </div>
+
+
+         <div class="notif">
+          <div class="user_img">
+            <img src="img/notif_danger.png" alt="">
+          </div>
+          <div class="notif_message">
+            <h3 class="message_title">Alina when changing the oil?</h3>
+            <p class="messge_descriptor">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+     <div class="top_line">
+       <ul class="list-inline">
+         <li><a href="gifts&cupons.html">Give 10$ , Get 10$  <i class="fa fa-heart"></i></a></li>
+         <li><a href="#" onclick="HelpOpenFn();">Help  <i class="fa fa-question-circle"></i></a></li>
+         <li><a href="#" onclick="NotifOpenFn();">Notification <i class="fa fa-bell" aria-hidden="true"></i><span class="number_notif">22</span></a></li>
+         <li><a href="#" onclick="openuser();">Alina Smith <i class="fa fa-cog" aria-hidden="true"></i></a></li>
+       </ul>
+     </div>
+    </header>
+
+    <div class="bottom_line_settings">
+       <h1><strong>Billing & Payments</strong></h1>
+       <ul class="list-inline">
+         <li><a href="billing.html">PAYMENT PREFERENCES</a></li>
+         <li><a href="" class="active">TRANSACTION HISTORY </a></li>
+       </ul>
+     </div>
+
+      <div class="addCarBody">
+       <img src="img/Appointments.png" alt="Appointments">
+       <h1>This page displays your past transactions.</h1>
+       <p>You have no transaction history. Get a new quote now.</p>
+       <button class="addCar"> GET A NEW QUOTE </button>
+     </div>
+
+
+
+
+    <!-- Modal -->
+        <div class="modal fade" id="Modal_add_card" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog ">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2>Add a new Credit Card</h2>
+              </div>
+              <div class="modal-body">
+               <div class="row">
+                
+                 <input type="text" placeholder ="Name on Credit Card">
+                 <br>
+                 <img src="img/visa_ico.png" alt="visa">
+                 <img src="img/masster_card.png" alt="masster card">
+                 <img src="img/american_express.png" alt="american express">
+                 <img src="img/discover_ico.png" alt="discover ico">
+                 <br>
+                 <input type="text" placeholder ="Credit card number">
+                 <br>
+                  <input type="text" class="date" id = "MM" placeholder ="MM" maxlength="2" onclick="DateTest();">
+                  <input type="text" class="date" id = "YY" placeholder ="YYYY" maxlength="4" onclick="DateTest();">
+                  <input type="text" class="date cvc" id = "CVC" placeholder ="CVC" maxlength="3" onclick="DateTest();">
+
+                
+               </div>
+              </div>
+              <div class="modal-footer">
+                <button class="save">SAVE</button>
+                <button class="cancel" onclick="HideModal();">CANCEL</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script>
+      $(document).ready(
+          function() {
+              $("html").niceScroll({cursorcolor:"#000"});
+          }
+      );
+    </script>
+    <script src= "js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Заголовок </title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+    <aside>
+      <div class="container-fluid">
+        <h1>Raven <span>X</span></h1>
+        <h6><a href="settings/dashboard.html">Dashboard</a></h6>
+        <ul>
+          <li><a href="#" class="active">My cars</a> <!-- <div class="calcCar"><span id = "calcCarspan">2</span></div> --> </li>
+          <li><a href="..//appointments.html">Appointments</a></li>
+          <li><a href="..//quotes.html">Quotes</a></li>
+          <li><a href="..//recommendedservices.html">Recommended <br> Services</a><!-- <div class="calcRecomendedServises"><span id = "calcRecomendedServisesSpan"></span></div> --></li>
+          <li><a href="..//advice.html">Advice</a></li>
+          <li><a href="..//mymechanics.html">My  mechanics</a></li>
+          <li><a href="..//gifts&cupons.html">Gifts & Coupons</a></li>
+          <li><hr></li>
+          <li><a href="billing.html">Billing & Payments</a></li>
+        </ul>
+        <a href="#" class="btn">GET A NEW QUOTE</a>
+      </div>
+    </aside>
+
+    <nav class="visible-xs visible-sm">
+      <div class="container">
+        <div class="col-xs-5 ">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars"></i></a>
+            <ul class="dropdown-menu text-right">
+             <li><a href="#">My cars</a> <div class="calcCar"><span id = "calcCarspan"></span></div></li>
+              <li><a href="..//appointments.html">Appointments</a></li>
+              <li><a href="..//quotes.html">Quotes</a></li>
+              <li><a href="..//recommendedservices.html">Recommended <br> Services</a><div class="calcRecomendedServises"><span id = "calcRecomendedServisesSpan"></span></div></li>
+              <li><a href="..//advice.html">Advice</a></li>
+              <li><a href="..//mymechanics.html">My mechanics</a></li>
+              <li><a href="..//gifts&cupons.html">Gifts & Coupons</a></li>
+              <li><hr></li>
+              <li><a href="billing.html"> Billing & Payments</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="visible-xs MenuUser">
+      <div class="container">
+        <div class="col-xs-5 ">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+           <i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+            <ul class="dropdown-menu text-right">
+               <li><a href="..//gifts&cupons.html">Give 10$ , Get 10$  <i class="fa fa-heart"></i></a></li>
+               <li><a href="#">Help  <i class="fa fa-question-circle"></i></a></li>
+               <li><a href="#">Notification <i class="fa fa-bell" aria-hidden="true"></i></a></li>
+               <li><a href="#" onclick="openuser();">Alina Smith  <i class="fa fa-cog" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+  
+    <div class="openUser">
+      <ul>
+        <li><a href="settings/accountsettings.html">Account Settings</a></li>
+        <li><a href="ravenxcredits.html">Gifting & Coupons</a></li>
+        <br>
+        <li><hr></li>
+        <li><a href="../index.html">Sing Out</a></li>
+      </ul>
+    </div>
+
+
+    <header>
+     <div class="top_line">
+       <ul class="list-inline">
+         <li><a href="gifts&cupons.html">Give 10$ , Get 10$  <i class="fa fa-heart"></i></a></li>
+         <li><a href="#">Help  <i class="fa fa-question-circle"></i></a></li>
+         <li><a href="#">Notification <i class="fa fa-bell" aria-hidden="true"></i></a></li>
+         <li><a href="#" onclick="openuser();">Alina Smith  <i class="fa fa-cog" aria-hidden="true"></i></a></li>
+       </ul>
+     </div>
+    </header>
+
+    <div class="bottom_line_settings">
+       <a class="H1Cars" href="../cars.html"> <strong><i class="fa fa-arrow-left" aria-hidden="true"></i> Back to My Cars</strong></a> <br>
+      <img src="img/audi_logo.png" alt="Fiat_500" width="200px" height="auto">
+      <p class="yearCar">2011</p>
+      <h2 class="marcCar">Audi A3 Quattro L4-2.0L Turbo</h2>
+
+        <div class="BigCircle">
+        <p>Car Health Not Available</p>
+      </div>
+
+      <ul class="SelectCarMenu list-inline">
+        <li><a href="#" class="HEALT active radioC" onclick="hideB();">CAR HEALTH</a></li>
+        <li><a href="#" class="RECOMMENDAT radioC" >RECOMMENDATIONS</a></li>
+        <li><a href="#" class="DET radioC" onclick="hideB();">CAR DETAILS</a></li>
+        <li><a href="#" onclick="hideB();">SERVICE HISTORY</a></li>
+        <li><a href="#" onclick="hideB();">SCHEDULED MAINTENANCE</a></li>
+      </ul>
+
+
+     </div>
+
+     <div class="addCarBody">
+       <img src="../img/quotes.png" alt="Add Car">
+       <h1>This page displays the electronic health of your car.</h1>
+       <p>Want to know your car's health? Book a service or diagnostic with <br> one of our top-rated mechanics. </p>
+       <button class="addCar" data-toggle="modal" href="#adds"> GET A QUOTE </button>
+     </div>
+
+     <div class="RECOMMENDATIONS">
+       <img src="../img/quotes.png" alt="Add Car">
+       <h1>This page displays recommended services <br> for your car.</h1>
+       <p>Book an inspection with one of our top rated mechanics. </p>
+       <button class="addCar" data-toggle="modal" href="#adds"> Book An Inspection </button>
+     </div>
+
+     <div class="CarDetails">
+	    <p class="CarDetailsP">Please fill out the information below. The more information you provide, the faster we'll be able to create your custom quotes. </p>
+	    <div class="help">
+	   		<p>Your odometer reading helps us better estimate the range of services you may require and personalize service recommendations for your car.</p>
+	    </div>
+
+		<label for="CMileage">Current Mileage</label>	<input type="text" id = "CMileage">
+		<label for="VIN">Daily Mileage</label>	<input type="text" id = "VIN">
+		<label for="Daily Mileage">VIN</label>	<input type="text" id = "DMileage">
+		<label for="Transmission" class="down"><span>What is your</span> transmission type?</label>	<input type="text" id = "Transmission">
+	    <button class="CHANGES" data-toggle="modal" href="#adds"> SAVE CHANGES </button>
+     </div>
+
+
+   
+
+    <!-- Modal -->
+       
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src= "js/main.js"></script>
+  </body>
+</html>

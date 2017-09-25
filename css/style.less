@@ -1,0 +1,1913 @@
+/*============    ШРИФТЫ    ===========*/
+@font-face{
+	font-family: "KickHornet";
+	src:url("..//fonts/KickHornet.eot");
+	src:url("..//fonts/KickHornet.eot&#iefix") format("embedded-opentype"),
+		url("..//fonts/KickHornet.woff") format("woff"),
+		url("..//fonts/KickHornet.ttf") format("treutype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*============    ГЛАВНЫЙ ЭКРАН    ===========*/
+body{
+	background-color: #f1f5f8;
+}
+h1#carH1{
+	display: block;
+ 	width: 100%;
+ 	background-color: #f1f5f8;
+    z-index: 9999;
+    font-size: 18px;
+    margin: 0px;
+   
+}
+h1#ServicesH1{
+	font-size: 18px;
+	display: block;
+	background-color: #f1f5f8;
+	position: absolute;
+	z-index: 9999;
+	top: -45px;
+}
+
+aside{
+	height: 100vh;
+	width: 20%;
+	position: fixed;
+	background-color: #112a4b;
+	float: left;
+	h1{
+		font-family: KickHornet;
+		color: #57bcfc;
+		text-align: center;
+		margin-bottom: 50px;
+		margin-top: 50px;
+		span{
+			color: red;
+		}
+	}
+	h6{
+		color: #ffffff;
+		font-size: 14px;
+		margin-left: 40px;
+		margin-bottom:20px;
+	}
+	ul{
+		list-style: none;
+		li{
+			margin-top: 10px;
+			a{
+				color: #828b96;
+				font-size: 14px;
+				text-decoration:none;
+				margin: 0;
+				&:hover{
+					text-decoration: none;
+					color: #b8bfc9;
+				};
+			}
+			hr{
+				border-top: 1px solid #1a365a;
+				color: #1a365a;
+			}
+			.calcCar, .calcRecomendedServises{
+				float: right;
+				width: 15px;
+				height: 15px;
+				margin-right: 10px;
+				background-color: #1c7ad5;
+				span{
+					display: block;
+					font-size: 10px;
+					text-align: center;
+					color: #fff;
+					padding-top: 1.9px;
+				}
+			}
+		}
+	}
+	a.btn{
+		margin-left: 40px;
+		padding: 0;
+		text-align: center;
+		padding: 10px 40px;
+		border: 1px solid #517196;
+		color: #7da2c8;
+		text-align: center;
+		margin-top: 40px;
+		&:hover{
+			color: #0da2c8;
+			border: 1px solid #0da2c8;
+			text-decoration: none;
+		};
+
+	}
+}
+
+.openUser{
+	display: none;
+	width: 240px;
+	height: 150px;
+	position: absolute;
+	right: 30px;
+	top: 50px;
+	box-shadow: 1px 1px 15px #909497;
+	z-index: 9999;
+	background-color: #fff;
+	ul{
+		list-style: none;
+		li{
+			margin-top: 5px;
+			&:last-child{
+				margin-bottom: 10px;
+			};
+			a{
+				font-size: 16px;
+				text-decoration: none;
+				color: #909497;
+				&:hover{
+					color: #46484a;
+				};
+			}
+		}
+	}
+}
+
+
+header{
+	background-color: #fff;
+	width: 80%;
+	height: 50px;
+	z-index: 999;
+	float: left;
+	position: relative;
+	left: 20%;
+	.top_line{
+		position: absolute;
+		width: 100%;
+		text-align: right;
+		margin-top: 20px;
+		margin-bottom: 300px;
+		border-bottom: 1px solid #ececec;
+		ul{
+			li{
+				border-left: 1px solid #ececec;
+				width: 170px;
+				text-align: center;
+				&:first-child{
+					border-left: none;
+				};
+			}
+		}
+		a{
+			text-decoration: none;
+			color: #a8a7a7;
+			&:hover{
+				text-decoration: none;
+				color: #464646;
+			};
+			i{
+				margin-left: 10px;
+			}
+		}
+	}
+	
+}
+
+.bottom_line, .bottom_line_settings{
+		position: relative;
+		/*border: 1px solid red;*/
+		padding-top: 15px;
+		padding-left: 40px;
+		left: 20%;
+		width: 80%;
+		height: 150px;
+		float: left;
+		background-color: #fff;
+		/*.user, .recommended_servises, .give{
+			display: inline-block;
+		}*/
+		.user{
+			left: 0;
+			position: absolute;
+			margin-left: 40px;
+			width: 300px;
+			margin-top: 30px;
+			h1{
+				font-size: 18px;
+				margin: 0;
+			}
+			p{
+				font-size: 12px;
+				color: #7e7e7e;
+			}
+			.user_photo{
+				/*margin-top: -15px;*/
+				width: 65px;
+				height: 65px;
+				border-radius: 50%;
+				margin-top: -10px;
+				/*border:1px solid red;*/
+				float: left;
+				margin-right: 30px;
+				background-image: url('../img/user_photo.png');
+				background-size: cover;
+				background-position: center;
+			}
+		}
+		.recommended_servises{
+
+			position: absolute;
+			border-left: 1px solid #c7c7c7;
+			width: 200px;
+			/*width: 30%;*/
+			margin-left: 450px;
+			padding-left: 20px;
+			
+			
+			h1{
+				font-size: 30px;
+				margin-top: 10px;
+			}
+			p{
+				font-size: 12px;
+				text-transform: uppercase;
+				color: #7e7e7e;
+				margin: 0;
+			}
+		}
+		.give{
+			width: 300px;
+			background-color: #e3f0ff;
+			border-radius: 10px;
+			padding: 10px 70px 10px 10px;
+			margin-right: 33px;
+			right: 0;
+			position: absolute;
+			img{
+				display: inline-block;
+				float: left;
+				margin-right: 25px;
+				margin-left: 5px;
+				margin-bottom: 20px;
+				margin-top: 20px;
+			}	
+			h3{
+				font-size: 14px;
+				color: #2d659a;
+			}
+			p{
+				font-size: 10px;
+				color: #6f92b8;
+			}
+		}
+	}
+
+.LogPastServices, .ScheduleanOilChange, .ScheduleaDiagnostic{
+	background-color: #fff;
+	width: 76%;
+	height: 200px;
+	z-index: 999;
+	float: left;
+	position: relative;
+	left: 22%;
+	top: 50px;
+	border-bottom: 2px solid #577cae;
+	.close{
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		p{
+			font-size: 16px;
+		}
+	}
+	img{
+		margin-left: 20px;
+		margin-right: 50px;
+		margin-top: 25px;
+		float: left;
+	}
+	h3{
+		margin-top: 55px;
+		font-size: 19px;
+	}
+	p{
+		font-size: 13px;
+		color: #7e7e7e;
+	}
+}
+
+.ScheduleanOilChange, .ScheduleaDiagnostic{
+	display: none;
+}
+
+.Cars, .CarsADD{
+	background-color: #fff;
+	width: 57%;
+	height: 100%;
+	z-index: 999;
+	float: left;
+	position: relative;
+	left: 22%;
+	top: 100px;
+	margin-bottom: 100px;
+	th{
+		text-transform: uppercase;
+	}
+	.profil{
+		width: 30%;
+		position: absolute;
+		background-color: #fff;
+		height: 200px;
+		float: left;
+		top: 20px;
+		/*border: 1px solid red;*/
+		left: 103%;
+		z-index: 999;
+			p{
+				width: 100%;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-left: 20px;
+				background-color: #fafbfc;
+				margin-left: 0;
+				span{
+					font-size: 12px;
+				}
+			}
+			h4{
+				margin-left: 20px;
+			}
+			input{
+				margin-left: 10px;
+				margin-right: 10px;
+				&:last-child{
+					height: 60px;
+					margin-bottom: 40px;
+				};
+			}
+			span.check{
+				font-size: 11px;
+				color: #606060;
+			}
+	}
+}
+.cleanFloat{
+	float: both;
+}
+.UpcomingRecommendedServices{
+	background-color: #fff;
+	width: 57%;
+	height: 760px;
+	z-index: 999;
+	position: relative;
+	left: 22%;
+	top: 750px;
+	margin-bottom: 100px;
+	z-index: 999;
+	.head_line, .botton_line{
+		position: absolute;
+		width: 100%;
+		height: 35px;
+		background-color: #fafbfc;
+		line-height: 35px;
+		border: 1px solid #e7e7e7;
+		p{
+			margin-left: 30px;
+			font-size: 11px;
+			color: #949292;
+		}
+	}
+	.botton_line{
+		top: 725px;
+		border-top: none;
+		a{
+			text-align: center;
+			text-decoration: none;
+		}
+	}
+	.big{
+		position: absolute;
+		width: 60%;
+		height: 230px;
+		border: 1px solid #e7e7e7;
+		border-top: none;
+		top: 35px;
+		h5{
+			margin-top: 40px;
+		}
+		.users{
+			background-image: url('../img/user_1.png');
+			margin: 20px;
+			width: 50px;
+			height: 50px;
+			border-radius: 10px;
+			overflow: hidden;
+			background-size: cover;
+			float: left;
+			margin-left: 80px;
+			margin-bottom: 150px;
+			&:before{
+				content: '';
+				width: 10px;
+				height: 10px;
+				top: 40px;
+				left: 40px;
+				border-radius: 50%;
+				background-color: red;
+				display: inline-block;
+				z-index: 999;
+				position: absolute;
+			};
+		}
+	}
+	.small{
+		position: absolute;
+		width: 40%;
+		right: 0;
+		height: 230px;
+		top: 35px;
+		border: 1px solid #e7e7e7;
+		border-left: none;
+		border-top: none;
+		padding-top: 50px;
+		padding-left:  30px;
+		span#price{
+			font-size: 26px;
+		}
+		.totalPrice{
+			float: left;
+			margin-right: 30px;
+		}
+		a{
+			position: absolute;
+			bottom: 40px;
+			padding: 10px 30px;
+			background-color: #1d7cd6;
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+			&:hover{
+				background-color: #3ba0ff;
+			};
+		}
+		.point{
+			width: 45px;
+			height: 37px;
+			border-radius: 2px;
+			border: 1px solid #c1c9d2;
+			position: absolute;
+			right: 40px;
+			bottom: 40px;
+			text-align: center;
+			&:hover{
+				border: 1px solid #9d9999;
+				cursor: pointer;
+			};
+			&:hover .pointer{
+				border: 1px solid #9d9999;
+				background-color: #9d9999;
+			};
+
+		}
+		.pointer{
+			margin-top: 15px;
+			width: 5px;
+			height: 5px;
+			border-radius: 50px;
+			border: 1px solid #c1c9d2;
+			background-color: #c1c9d2;
+			display: inline-block;
+		}
+	}
+	.middle{
+		margin-top: 230px;
+		padding-right: 40px;
+		img{
+			margin-bottom: 10px;
+			display: block;
+		}
+		.portfolio{
+			background-image: url('../img/portfolio_ico.png');
+
+			&:before{
+				content: '';
+				width: 10px;
+				height: 10px;
+				top: 40px;
+				left: 40px;
+				border-radius: 50%;
+				background-color: #1d7cd6;
+				display: inline-block;
+				z-index: 999;
+				position: absolute;
+			};
+		}
+	}
+	.down{
+		bottom: 0;
+		top: 495px;
+		padding-right: 40px;
+		img{
+			margin-bottom: 10px;
+			display: block;
+		}
+		.portfolio{
+			background-image: url('../img/portfolio_ico.png');
+
+			&:before{
+				content: '';
+				width: 10px;
+				height: 10px;
+				top: 40px;
+				left: 40px;
+				border-radius: 50%;
+				background-color: #1d7cd6;
+				display: inline-block;
+				z-index: 999;
+				position: absolute;
+			};
+		}
+	}
+}
+
+.bottom_line_settings{
+	height: 133px;
+	h1{
+		margin-top: 0px;
+		margin-bottom: 30px;
+	}
+	ul{
+		li{
+			a{
+				color: #525456;
+				text-decoration: none;
+				text-transform: uppercase;
+				padding: 10px 20px 30px 20px;
+				border: none;
+				border-bottom: 1px solid transparent;
+				background-color: transparent;
+				&:hover{
+					border-bottom: 2px solid #577cae;
+				};
+			}
+			a.active{
+				border-bottom: 2px solid #577cae;
+			}
+		}
+	}
+}
+
+.settingsAccount{
+	background-color: #fff;
+	width: 57%;
+	height: 450px;
+	z-index: 999;
+	float: left;
+	position: relative;
+	left: 22%;
+	top: 50px;
+	margin-bottom: 100px;
+	padding-top: 30px;
+	p{
+		float: left;
+		margin-left: 100px;
+		padding-right: 50px;
+	}
+	label{
+		margin-right: 10px;
+		margin-left: 50px;
+		margin-top: 15px;
+		display: inline-block;
+		width: 150px;
+	}
+	input{
+		width: 72%;
+		height: 45px;
+		border: 1px solid #ccd2d9;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-top: 10px;
+		right: 30px;
+		box-shadow: inset 0px 0px 7px #e7e7e7;
+	}
+	a.btn{
+		padding: 10px 30px;
+		border-radius: 30px;
+		border: 1px solid silver;
+		text-transform: uppercase;
+		color: #666;
+		right: 30px;
+		margin-left: 77%;
+		&:hover{
+			border: 1px solid #525456;
+			color: #525456;
+		};
+	}
+}
+
+.faceBook{
+	background-color: #fff;
+	width: 57%;
+	height: 200px;
+	z-index: 999;
+	float: left;
+	position: relative;
+	left: 22%;
+	top: 0px;
+	margin-bottom: 100px;
+	padding-top: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	h3{
+		font-size: 20px;
+	}
+	h6{
+		font-size: 12px;
+		color: #8b8989;
+	}
+	p{
+		font-size: 10px;
+		position: absolute;
+		display: block;
+		right: 30px;
+		text-align: center;
+		color: #8b8989;
+	}
+	a.facebook{
+		background-color: #3b5998;
+		padding: 15px 50px;
+		border-radius: 25px;
+		color: #fff;
+		text-decoration: none;
+		position: absolute;
+		right: 20px;
+		text-transform: uppercase;
+		top: 60px;
+		&:hover{
+			background-color: #313bca;
+		};
+		i{
+			margin-right: 20px;
+		}
+	}
+}
+
+.ChangePassword{
+	background-color: #fff;
+	width: 57%;
+	height: 350px;
+	z-index: 999;
+	float: left;
+	position: relative;
+	left: 22%;
+	top: -50px;
+	margin-bottom: 100px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	h3{
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+	p{
+		margin-right: 10px;
+		margin-left: 50px;
+		margin-top: 15px;
+		display: inline-block;
+		width: 150px;
+	}
+	input{
+		width: 74%;
+		height: 45px;
+		border: 1px solid #ccd2d9;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-top: 10px;
+		box-shadow: inset 0px 0px 7px #e7e7e7;
+	}
+	a.btn{
+		padding: 10px 30px;
+		border-radius: 30px;
+		border: 1px solid silver;
+		text-transform: uppercase;
+		color: #666;
+		/*right: 50px;*/
+		margin-left: 75%;
+		margin-top: 30px;
+		&:hover{
+			border: 1px solid #525456;
+			color: #525456;
+		};
+	}
+}
+
+.CarsADD{
+	padding-top: 35px;
+	padding-bottom: 30px;
+	text-align: center;
+	border: 1.5px solid #e7e7e7;
+	margin-bottom: 50px;
+	h1{
+		font-size: 17px;
+		color: #6d7579;
+		line-height: 20px;
+	}
+	h1#carH1{
+		top: -30px;
+		text-align: left;
+		position: absolute;
+	}
+	p{
+		font-size: 13px;
+		color: #6d7579;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	button{
+		padding: 15px 55px;
+		background-color: #1d7cd6;
+		color: #fff;
+		text-transform: uppercase;
+		border: none;
+		margin-top: 10px;
+		&:hover{
+			background-color: #2e95f6;
+		};
+	}
+	.profil{
+		text-align: left;
+		top: 0;
+		p{
+			border: 1px solid #e7e7e7;
+		}
+	}
+}
+
+.mail_preferences{
+	text-align: center;
+	background-color: #fff;
+	width: 57%;
+	height: 310px;
+	z-index: 999;
+	float: left;
+	position: relative;
+	left: 22%;
+	top: 50px;
+	margin-bottom: 100px;
+	padding-top: 30px;
+	/*border: 1px solid #e7e7e7;*/
+	.centerDIv, .centerDIvFooter{
+		width: 35%;
+		margin: 20px auto;
+	}
+	.centerDIvFooter{
+		width: 100%;
+		height: 80px;
+		text-align: center;
+		background-color: #f7f7f7;
+		position: absolute;
+		border: 1px solid #e7e7e7;
+		.centerDIv{
+			width: 39%;
+			/*border: 1px solid red;*/
+		}
+		p{
+			width: 200px;
+		}
+	}
+	p{
+		display: block;
+		float: left;
+		width: 180px;
+		margin-top: 7px;
+		text-align: right;
+	}
+
+	.onoffswitch {
+	    position: relative; width: 72px;
+	    -webkit-user-select:none;
+	    -moz-user-select:none;
+	    -ms-user-select: none;
+	    margin: 0 auto;
+	    margin-left: 200px;
+	}
+	.onoffswitch-checkbox {
+	    display: none;
+	}
+	.onoffswitch-label {
+	    display: block; overflow: hidden;
+	    cursor: pointer;
+	    height: 34px; padding: 0;
+	    line-height: 34px;
+	    border: 1px solid #E3E3E3;
+	    border-radius: 34px;
+	    background-color: #FFFFFF;
+	    transition: background-color 0.3s ease-in;
+	}
+	.onoffswitch-label:before {
+	    content: "";
+	    display: block; width: 34px; margin: 0px;
+	    background: #FFFFFF;
+	    position: absolute; top: 0; bottom: 0;
+	    right: 40px;
+	    border: 1px solid #E3E3E3; border-radius: 34px;
+	    transition: all 0.3s ease-in 0s; 
+	}
+	.onoffswitch-checkbox:checked + .onoffswitch-label {
+	    background-color: #1d7cd6;
+	}
+	.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+	   border-color: #1d7cd6;
+	}
+	.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+	    right: 0px; 
+	}
+
+	.onoffswitch_2 {
+	    position: relative; width: 72px;
+	    -webkit-user-select:none;
+	    -moz-user-select:none;
+	    -ms-user-select: none;
+	    margin: 0 auto;
+	    margin-left: 200px;
+	}
+	.onoffswitch_2-checkbox {
+	    display: none;
+	}
+	.onoffswitch_2-label {
+	    display: block;
+	    overflow: hidden;
+	    cursor: pointer;
+	    height: 34px;
+	    padding: 0;
+	    line-height: 34px;
+	    border: 1px solid #E3E3E3;
+	    border-radius: 34px;
+	    background-color: #FFFFFF;
+	    transition: background-color 0.3s ease-in;
+	}
+	.onoffswitch_2-label:before {
+	    content: "";
+	    display: block;
+	    width: 34px;
+	    margin: 0px;
+	    background: #FFFFFF;
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    right: 40px;
+	    border: 1px solid #E3E3E3;
+	    border-radius: 34px;
+	    transition: all 0.3s ease-in 0s; 
+	}
+	.onoffswitch_2-checkbox:checked + .onoffswitch_2-label {
+	    background-color: #1d7cd6;
+	}
+	.onoffswitch_2-checkbox:checked + .onoffswitch_2-label, .onoffswitch_2-checkbox:checked + .onoffswitch_2-label:before {
+	   border-color: #1d7cd6;
+	}
+	.onoffswitch_2-checkbox:checked + .onoffswitch_2-label:before {
+	    right: 0px; 
+	}
+
+
+	.onoffswitch_3{
+	    position: relative; width: 72px;
+	    -webkit-user-select:none;
+	    -moz-user-select:none;
+	    -ms-user-select: none;
+	    margin: 0 auto;
+	    margin-left: 200px;
+	}
+	.onoffswitch_3-checkbox {
+	    display: none;
+	}
+	.onoffswitch_3-label {
+	    display: block;
+	    overflow: hidden;
+	    cursor: pointer;
+	    height: 34px;
+	    padding: 0;
+	    line-height: 34px;
+	    border: 1px solid #E3E3E3;
+	    border-radius: 34px;
+	    background-color: #FFFFFF;
+	    transition: background-color 0.3s ease-in;
+	}
+	.onoffswitch_3-label:before {
+	    content: "";
+	    display: block;
+	    width: 34px;
+	    margin: 0px;
+	    background: #FFFFFF;
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    right: 40px;
+	    border: 1px solid #E3E3E3;
+	    border-radius: 34px;
+	    transition: all 0.3s ease-in 0s; 
+	}
+	.onoffswitch_3-checkbox:checked + .onoffswitch_3-label {
+	    background-color: #1d7cd6;
+	}
+	.onoffswitch_3-checkbox:checked + .onoffswitch_3-label, .onoffswitch_3-checkbox:checked + .onoffswitch_3-label:before {
+	   border-color: #1d7cd6;
+	}
+	.onoffswitch_3-checkbox:checked + .onoffswitch_3-label:before {
+	    right: 0px; 
+	}
+
+
+	.onoffswitch_4{
+	    position: relative; width: 72px;
+	    -webkit-user-select:none;
+	    -moz-user-select:none;
+	    -ms-user-select: none;
+	    margin: 0 auto;
+	    margin-left: 220px;
+	}
+	.onoffswitch_4-checkbox {
+	    display: none;
+	}
+	.onoffswitch_4-label {
+	    display: block;
+	    overflow: hidden;
+	    cursor: pointer;
+	    height: 34px;
+	    padding: 0;
+	    line-height: 34px;
+	    border: 1px solid #E3E3E3;
+	    border-radius: 34px;
+	    background-color: #FFFFFF;
+	    transition: background-color 0.3s ease-in;
+	}
+	.onoffswitch_4-label:before {
+	    content: "";
+	    display: block;
+	    width: 34px;
+	    margin: 0px;
+	    background: #FFFFFF;
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    right: 40px;
+	    border: 1px solid #E3E3E3;
+	    border-radius: 34px;
+	    transition: all 0.3s ease-in 0s; 
+	}
+	.onoffswitch_4-checkbox:checked + .onoffswitch_4-label {
+	    background-color: #1d7cd6;
+	}
+	.onoffswitch_4-checkbox:checked + .onoffswitch_4-label, .onoffswitch_4-checkbox:checked + .onoffswitch_4-label:before {
+	   border-color: #1d7cd6;
+	}
+	.onoffswitch_4-checkbox:checked + .onoffswitch_4-label:before {
+	    right: 0px; 
+	}
+
+
+
+}
+
+
+
+/*============    	МОДАЛЬНЫЕ ОКНА    ===========*/
+#adds{
+	.modal-header{
+		background-color: #fafafa;
+		border-bottom: none;
+		h1{
+			font-size: 20px;
+			color: #26282d;
+		}
+		button.close{
+			position: absolute;
+			top: -30px;
+			right: 0;
+			color: #fff;
+			font-size: 30px;
+			outline:none;
+		}
+	}
+	.modal-body{
+		padding-left: 80px;
+		padding-right: 80px;
+		background-color: #fafafa;
+		p{
+			color: #565555;
+		}
+		span{
+			color: #186fce;
+		}
+		select{
+			width: 100%;
+			height: 47px;
+			margin-top: 15px;
+			border-radius: 7px;
+			outline:none;
+			background-color: #f1f5f8;
+			padding-left: 20px;
+			padding-right: 30px;
+			&:hover{
+				background-color:#fff;
+				box-shadow: 0px 0px 13px #d0dcee inset;
+			};
+			&:last-child{
+				margin-bottom: 30px;
+			};
+		}
+	}
+	.modal-footer{
+
+		text-align: center;
+		background-color: #f1f5f8;
+		border-top: 1px solid #d2d0d0;
+		button{
+			padding: 13px 27px;
+			text-transform: uppercase;	
+			border-radius: 30px;
+			outline:none;
+		}
+		.btnAdd{
+			background-color: #0d82d5;
+			border: 1px solid #0d82d5;
+			color: #fff;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			&:hover{
+				background-color: #3ba7f4;
+				border: 1px solid #3ba7f4;
+			};
+		}
+		.btnCloce{
+			background-color: transparent;
+			border: 1px solid #e2dfdf;
+			padding: 13px 15px;
+			color: #565555;
+			&:hover{
+				border: 1px solid #6d6d6d;
+			};
+		}
+	}
+}
+
+/*============    	АДАПТИВ    ===========*/
+
+.dropdown-toggle{
+	padding: 5px;
+	display: inline-block;
+	text-align: center;
+	float: left;
+	i{
+		font-size: 40px;
+	}
+}
+
+.MenuUser{
+	right: 0;
+	position: absolute;
+	top: 0;
+	.dropdown-menu{
+		margin-left: -150px;
+	}
+}
+
+@media(min-width:0px) and (max-width:320px) {
+	header{
+		display: none;
+	}
+
+	aside{
+		display: none;
+	}
+	header, .bottom_line, .LogPastServices, .Cars, .UpcomingRecommendedServices, .bottom_line_settings, .settingsAccount, .faceBook ,.ChangePassword{
+		left: 0;
+		width: 100%;
+	}
+	header{
+		background-color: transparent;
+		margin-bottom: 30px;
+		.top_line{
+			border: none;
+			text-align: center;
+			ul{
+				li{
+					border: none;
+				}
+			}
+		}
+	}
+	.bottom_line{
+		overflow: hidden;
+		width: 100%;
+		margin-top: 50px;
+		.user{
+			margin-left: 0;
+			h1{
+				font-size: 14px;
+			}
+		}
+		.give{
+			display: none;
+		}
+		.recommended_servises{
+			margin-left: 0;
+			border: none;
+			display: none;
+		}
+	}
+
+	.LogPastServices, .ScheduleanOilChange, .ScheduleaDiagnostic{
+		text-align: center;
+		width: 100%;
+		left: 0;
+		img{
+			display: none;
+		}
+	}
+	.Cars{
+		font-size: 12px;
+		text-transform: uppercase;
+		.profil{
+			float: right;
+			left: 0;
+			width: 100%;
+			top: 320px;
+		}
+	}
+	.UpcomingRecommendedServices{
+		margin-top: 340px;
+		font-size: 10px;
+		text-align: center;
+		top: 800px;
+		.users{
+			display: none;
+		}
+		.small{
+			padding: 5px;
+			img{
+				display: none;
+				}
+				a{
+					left: 0;
+					margin-top: -20px;
+					padding: 10px 5px;
+				}
+				.point{
+					bottom: 2px;
+				}
+				p{
+					margin-top: 10px;
+					margin-bottom: 0;
+					
+				}
+				span#price{
+						font-size: 12px;
+				}
+		}
+	}
+	.bottom_line_settings{
+		text-align: center;
+		h1{
+			font-size: 14px;
+		}
+		ul{
+			li{
+				a{
+					font-size: 12px;
+					border: none;
+					padding: 0;
+					&:hover{
+						border: none;
+					};
+				}
+			}
+			li.active{
+				border: none;
+			}
+		}
+	}
+	.settingsAccount{
+		text-align: center;
+		height: 100%;
+		br{
+			display: none;
+		}
+		label{
+			margin: 0;
+			margin-top: 10px;
+		}
+		input{
+			width: 90%;
+		}
+		a.btn{
+			margin: 0;
+			margin-top: 15px;
+			margin-bottom: 30px;
+		}
+	}
+	.faceBook{
+		padding-top: 0;
+		a.facebook{
+			text-align: center;
+			top: 100px;
+			right: 10px;
+			left: 10px;
+		}
+		p{
+			bottom: 10px;
+			left: 0;
+			right: 0;
+		}
+	}
+	.ChangePassword{
+		text-align: center;
+		height: 490px;
+		p{
+			text-align: center;
+			margin: 0;
+			margin-bottom: 10px;
+			margin-top: 20px;
+		}
+		input{
+			width: 100%;
+		}
+		a.btn{
+			margin: 0;
+			margin-top: 15px;
+			margin-bottom: 30px;
+		}
+	}
+	.CarsADD{
+		width: 100%;
+		left: 0;
+		.profil{
+			float: right;
+			left: 0;
+			width: 100%;
+			top: 560px;
+			margin-bottom: 30px;
+		}
+	}
+	
+}
+
+@media(min-width:321px) and (max-width:480px) {
+	
+
+	aside,header{
+		display: none;
+	}
+	header, .bottom_line, .LogPastServices, .Cars, .UpcomingRecommendedServices{
+		left: 0;
+		width: 100%;
+	}
+
+	header, .bottom_line, .LogPastServices, .Cars, .UpcomingRecommendedServices, .bottom_line_settings, .settingsAccount, .faceBook ,.ChangePassword{
+		left: 0;
+		width: 100%;
+	}
+	header{
+		background-color: transparent;
+		margin-bottom: 30px;
+		.top_line{
+			border: none;
+			text-align: center;
+			ul{
+				li{
+					border: none;
+					a{
+						font-size: 14px;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+	.bottom_line{
+		overflow: hidden;
+		width: 100%;
+		margin-top: 50px;
+		.user{
+			margin-left: 0;
+			h1{
+				font-size: 14px;
+			}
+		}
+		.give{
+			display: none;
+		}
+		.recommended_servises{
+			margin-left: 0;
+			border: none;
+			display: none;
+		}
+	}
+
+	.LogPastServices, .ScheduleanOilChange, .ScheduleaDiagnostic{
+		text-align: center;
+		left: 0;
+		width: 100%;
+		img{
+			display: none;
+		}
+	}
+	.Cars{
+		font-size: 12px;
+		text-transform: uppercase;
+		.profil{
+			
+			float: right;
+			left: 0;
+			width: 100%;
+			top: 320px;
+		}
+	}
+	.UpcomingRecommendedServices{
+		margin-top: 340px;
+		font-size: 10px;
+		text-align: center;
+		.users{
+			display: none;
+		}
+		.small{
+			padding: 5px;
+			img{
+				display: none;
+				}
+				a{
+					display: block;
+					width: 100%;
+					left: 0;
+					margin-top: -20px;
+					padding: 10px 15px;
+				}
+				.point{
+					bottom: 2px;
+					left: 0;
+				}
+				p{
+					margin-top: 10px;
+					margin-bottom: 0;
+					
+				}
+				span#price{
+						font-size: 12px;
+				}
+		}
+	}
+
+
+
+	.bottom_line_settings{
+		text-align: center;
+		h1{
+			font-size: 14px;
+		}
+		ul{
+			li{
+				a{
+					font-size: 12px;
+					border: none;
+					padding: 0;
+					&:hover{
+						border: none;
+					};
+				}
+			}
+			li.active{
+				border: none;
+			}
+		}
+	}
+	.settingsAccount{
+		text-align: center;
+		height: 100%;
+		br{
+			display: none;
+		}
+		label{
+			margin: 0;
+			margin-top: 10px;
+		}
+		input{
+			width: 90%;
+		}
+		a.btn{
+			margin: 0;
+			margin-top: 15px;
+			margin-bottom: 30px;
+		}
+	}
+	.faceBook{
+		padding-top: 0;
+		a.facebook{
+			text-align: center;
+			top: 100px;
+			right: 10px;
+			left: 10px;
+		}
+		p{
+			bottom: 10px;
+			left: 0;
+			right: 0;
+		}
+	}
+	.ChangePassword{
+		text-align: center;
+		height: 490px;
+		p{
+			text-align: center;
+			margin: 0;
+			margin-bottom: 10px;
+			margin-top: 20px;
+		}
+		input{
+			width: 100%;
+		}
+		a.btn{
+			margin: 0;
+			margin-top: 15px;
+			margin-bottom: 30px;
+		}
+	}
+	.CarsADD{
+		width: 100%;
+		left: 0;
+		.profil{
+			float: right;
+			left: 0;
+			width: 100%;
+			top: 560px;
+			margin-bottom: 30px;
+		}
+	}
+
+}
+
+@media(min-width:481px) and (max-width:768px) {
+	
+	aside, header{
+		display: none;
+	}
+	header, .bottom_line, .LogPastServices, .Cars, .UpcomingRecommendedServices{
+		left: 0;
+		width: 100%;
+	}
+
+	header, .bottom_line, .LogPastServices, .Cars, .UpcomingRecommendedServices, .bottom_line_settings, .settingsAccount, .faceBook, .ChangePassword{
+		left: 0;
+		width: 100%;
+	}
+	header{
+		background-color: transparent;
+		margin-bottom: 30px;
+		.top_line{
+			border: none;
+			text-align: center;
+			ul{
+				li{
+					border: none;
+					width: 110px;
+					a{
+						font-size: 14px;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+	.bottom_line{
+		overflow: hidden;
+		width: 100%;
+		margin-top: 50px;
+		.user{
+			margin-left: 0;
+			h1{
+				font-size: 14px;
+			}
+		}
+		.give{
+			display: none;
+		}
+		.recommended_servises{
+			margin-left: 0;
+			border: none;
+			right: 0;
+		}
+	}
+
+	.LogPastServices, .ScheduleanOilChange, .ScheduleaDiagnostic{
+		text-align: center;
+		left: 0;
+		width: 100%;
+		img{
+			display: none;
+		}
+	}
+	.Cars{
+		font-size: 12px;
+		text-transform: uppercase;
+		.profil{
+			
+			float: right;
+			left: 0;
+			width: 100%;
+			top: 280px;
+		}
+	}
+	.UpcomingRecommendedServices{
+		margin-top: 300px;
+		font-size: 10px;
+		text-align: center;
+		.users{
+			display: none;
+		}
+		.small{
+			padding: 5px;
+			img{
+				display: none;
+				}
+				a{
+					display: block;
+					width: 100%;
+					left: 0;
+					margin-top: -20px;
+					padding: 10px 15px;
+				}
+				.point{
+					bottom: 2px;
+					left: 0;
+				}
+				p{
+					margin-top: 10px;
+					margin-bottom: 0;
+					
+				}
+				span#price{
+						font-size: 12px;
+				}
+		}
+	}
+	
+	.settingsAccount{
+		height: 100%;
+		br{
+			display: none;
+		}
+		label{
+			margin-left: 10px;
+		}
+		input{
+			width: 60%;
+		}
+		a.btn{
+			margin: 0;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			margin-left: 10px;
+		}
+	}
+
+	.faceBook{
+		h3{
+			font-size: 22px;
+		}
+		h6{
+			font-size: 10px;
+		}
+	}
+
+	.ChangePassword{
+		p{
+			margin-left: 0;
+		}
+		input{
+			width: 60%;
+		}
+		a.btn{
+			margin: 0;
+			margin-top: 30px;
+
+		}
+	}
+	.CarsADD{
+		width: 100%;
+		left: 0;
+		.profil{
+			float: right;
+			left: 0;
+			width: 100%;
+			top: 560px;
+			margin-bottom: 30px;
+		}
+	}
+
+}
+
+@media(min-width:768px) and (max-width:768px){
+	header{
+		display: block;
+		.top_line{
+			ul{
+				li{
+					width: 150px;
+					a{
+						font-size: 13px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(min-width:769px) and (max-width:992px) {
+	aside{
+		display: none;
+	}
+
+	header, .bottom_line, .LogPastServices, .Cars, .UpcomingRecommendedServices{
+		left: 0;
+		width: 100%;
+	}
+	header, .bottom_line, .LogPastServices, .Cars, .UpcomingRecommendedServices, .bottom_line_settings, .settingsAccount, .faceBook, .ChangePassword{
+		left: 0;
+		width: 100%;
+	}
+	header{
+		background-color: transparent;
+		margin-bottom: 30px;
+		.top_line{
+			border: none;
+			text-align: center;
+			ul{
+				li{
+					border: none;
+					width: 160px;
+					a{
+						font-size: 14px;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+	.bottom_line{
+		overflow: hidden;
+		width: 100%;
+		margin-top: 50px;
+		.user{
+			margin-left: 0;
+			h1{
+				font-size: 14px;
+			}
+		}
+		.give{
+			display: none;
+		}
+		.recommended_servises{
+			margin-left: 0;
+			border: none;
+			right: 0;
+		}
+	}
+
+	.ScheduleanOilChange, .ScheduleaDiagnostic{
+		left: 0;
+		width: 100%;
+	}
+	.Cars{
+		font-size: 12px;
+		text-transform: uppercase;
+		.profil{
+			
+			float: right;
+			left: 0;
+			width: 100%;
+			top: 250px;
+		}
+	}
+	.UpcomingRecommendedServices{
+		margin-top: 340px;
+		font-size: 10px;
+		text-align: center;
+		.users{
+			display: none;
+		}
+		.big{
+			padding: 15px;
+		}
+		.small{
+			padding: 15px;
+			padding-top: 50px;
+			/*img{
+				display: none;
+				}*/
+				a{
+					display: block;
+					width: 100%;
+					left: 0;
+					margin-top: -20px;
+					padding: 10px 15px;
+				}
+				.point{
+					bottom: 2px;
+					left: 0;
+				}
+				p{
+					margin-bottom: 0;
+					font-size: 12px;
+					
+				}
+				span#price{
+						font-size: 24px;
+				}
+		}
+	}
+
+	.ChangePassword{
+		input{
+			width: 78%;
+		}
+		p{
+			margin-left: 0;
+		}
+		a.btn{
+			margin-left: 72%;
+		}
+	}
+	.CarsADD{
+		width: 100%;
+		left: 0;
+		.profil{
+			float: right;
+			left: 0;
+			width: 100%;
+			top: 560px;
+			margin-bottom: 30px;
+		}
+	}
+
+}
+
+
+@media(min-width:993px) and (max-width:1200px) {
+	br{
+		display: none;
+	}
+	aside{
+		br{
+			display: block;
+		}
+		a.btn{
+			padding: 10px 25px;
+			margin-left: 0;
+		}
+	}
+	.Cars{
+		.profil{
+			br{
+				display: block;
+			}
+			height: 230px;
+		}
+	}
+		
+	.bottom_line{
+			overflow: hidden;
+			width: 80%;
+			/*margin-top: 50px;*/
+			.user{
+				margin-left: 0;
+				h1{
+					font-size: 14px;
+				}
+			}
+			.give{
+				display: none;
+			}
+			.recommended_servises{
+				margin-left: 0;
+				border: none;
+				right: 0;
+			}
+	}
+	.UpcomingRecommendedServices{
+		top: 750px;
+			p{
+				font-size: 10px;
+			}
+			.small{
+				a{
+					padding: 10px 10px;
+				}
+				.point{
+					right: 10px;
+				}
+			}
+	}
+	.settingsAccount{
+		label{
+			margin-left: 10px;
+		}
+		input{
+			width: 67.5%;
+		}
+		a.btn{
+			margin-left: 67%;
+			margin-top: 30px;
+		}
+	}
+	.ChangePassword{
+		input{
+			width: 70%;
+		}
+		p{
+			margin-left: 0;
+		}
+		a.btn{
+			margin-left: 63%;
+		}
+	}
+	.faceBook{
+		br{
+			display: block;
+		}
+	}
+	.CarsADD{
+		
+		.profil{
+			height: 250px;
+			br{
+				display: block;
+			}
+		}
+	}
+}
+
+@media(min-width:1200px) and (max-width:1529px){
+	aside{
+		a.btn{
+			padding: 10px 20px;
+		}
+	}
+	.bottom_line .recommended_servises{
+		margin-left: 350px;
+	}
+	.UpcomingRecommendedServices{
+		.big{
+			font-size: 12px;
+		}
+		.small{
+			.point{
+				right: 15px;
+			}
+		}
+	}
+
+	.settingsAccount{
+		height: 450px;
+		label{
+			margin-left: 10px;
+		}
+		input{
+			/*width: 67.5%;*/
+			width: 72.7%;
+		}
+		a.btn{
+			margin-left: 72.7%;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+	}
+	.ChangePassword{
+		input{
+			width: 75%;
+		}
+		p{
+			margin-left: 0;
+		}
+		a.btn{
+			margin-left: 69%;
+		}
+	}
+	.faceBook{
+		br{
+			display: block;
+		}
+	}
+	.CarsADD{
+		.profil{
+			height: 230px;
+			br{
+				display: block;
+			}
+		}
+	}
+}
+
+
+

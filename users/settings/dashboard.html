@@ -1,0 +1,504 @@
+<!-- <?php session_start();
+if(! isset ($_SESSION['user']))
+{
+  header("Location: login.html");
+}
+?> -->
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Заголовок </title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <aside>
+      <div class="container-fluid">
+
+        <h1>Raven <span>X</span></h1>
+        <h6>Dashboard</h6>
+        <ul>
+          <li><a href="../cars.html">My cars</a> <div class="calcCar"><span id = "calcCarspan">2</span></div> </li>
+          <li><a href="../appointments.html">Appointments</a></li>
+          <li><a href="../quotes.html">Quotes</a></li>
+          <li><a href="../recommendedservices.html">Recommended <br> Services</a><div class="calcRecomendedServises"><span id = "calcRecomendedServisesSpan">3</span></div></li>
+          <li><a href="../advice.html">Advice</a></li>
+          <li><a href="../mymechanics.html">My  mechanics</a></li>
+          <li><a href="../gifts&cupons.html">Gifts & Coupons</a></li>
+          <li><hr></li>
+          <li><a href="../billing.html">Billing & Payments</a></li>
+        </ul>
+        <a href="../../qoute/quote.html" class="btn">GET A NEW QUOTE</a>
+      </div>
+    </aside>
+
+    <nav class="visible-xs visible-sm">
+      <div class="container">
+        <div class="col-xs-5 ">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars"></i></a>
+            <ul class="dropdown-menu text-right">
+             <li><a href="../cars.html">My cars</a> <div class="calcCar"><span id = "calcCarspan"></span></div></li>
+              <li><a href="../appointments.html">Appointments</a></li>
+              <li><a href="../quotes.html">Quotes</a></li>
+              <li><a href="../recommendedservices.html">Recommended <br> Services</a><div class="calcRecomendedServises"><span id = "calcRecomendedServisesSpan"></span></div></li>
+              <li><a href="../advice.html">Advice</a></li>
+              <li><a href="../mymechanics.html">My mechanics</a></li>
+              <li><a href="../gifts&cupons.html">Gifts & Coupons</a></li>
+              <li><hr></li>
+              <li><a href="../billing.html"> Billing & Payments</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="visible-xs MenuUser">
+      <div class="container">
+        <div class="col-xs-5 ">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+           <i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+            <ul class="dropdown-menu text-right">
+               <li><a href="../gifts&cupons.html">Give 10$ , Get 10$  <i class="fa fa-heart"></i></a></a></li>
+               <li><a href="#">Help  <i class="fa fa-question-circle"></i></a></a></li>
+               <li><a href="#">Notification <i class="fa fa-bell" aria-hidden="true"></i></a></a></li>
+               <li><a href="#" onclick="openuser();">Alina Smith  <i class="fa fa-cog" aria-hidden="true"></i></a></a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="openUser">
+      <ul>
+        <li><a href="accountsettings.html">Account Settings</a></li>
+        <li><a href="../ravenxcredits.html">Gifting & Coupons</a></li>
+        <br>
+      
+        <li><a href="../index.html" class="out">Sing Out</a></li>
+      </ul>
+    </div>
+
+    <div class="openHelp">
+      <h3>CONTACT CUSTOMER SUPPORT</h3>
+      <p>Questions? Contact Service Advisor</p>
+      <p class="tel">1-800-755-6740</p>
+      <p class="writ">ravenxinfo@gmail.com</p>
+    </div>
+
+    <div class="openNotific">
+      <ul class="list-inline">
+        <li class="active MESSAGES" onclick="GoMessage();"><a href="#" >MESSAGES (17)</a></li>
+        <li class=" NOTIFICATION" onclick="GoNotif();"><a href="#">NOTIFICATION (5)</a></li>
+      </ul>
+
+      <div class="Oll_message">
+
+        <div class="message">
+          <div class="user_img">
+            <img src="img/user_photo_1.png" alt="">
+          </div>
+          <div class="user_message">
+            <h3 class="message_title">Hi Alina! I need a carb repair...</h3>
+            <p class="messge_descriptor">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  </p>
+          </div>
+        </div>
+
+        <div class="message">
+          <div class="user_img">
+            <img src="img/ac.png" alt="">
+          </div>
+          <div class="user_message">
+            <h3 class="message_title">Alina when changing the oil?</h3>
+            <p class="messge_descriptor">Lorem ipsum dolor sit amet, </p>
+          </div>
+        </div>
+
+        <div class="message">
+          <div class="user_img">
+            <img src="img/ac.png" alt="">
+          </div>
+          <div class="user_message">
+            <h3 class="message_title">Alina when changing the oil?</h3>
+            <p class="messge_descriptor">Lorem ipsum dolor sit amet, </p>
+          </div>
+        </div>
+
+
+        <div class="message">
+          <div class="user_img">
+            <img src="img/ac.png" alt="">
+          </div>
+          <div class="user_message">
+            <h3 class="message_title">Alina when changing the oil?</h3>
+            <p class="messge_descriptor">Lorem ipsum dolor sit amet, </p>
+          </div>
+        </div>
+
+
+        <div class="SOll">
+          <button>SHOW ALL</button>
+        </div>
+
+      </div>
+
+      <div class="Oll_Notif">
+
+        <div class="notif">
+          <div class="user_img">
+            <img src="img/ac.png" alt="">
+          </div>
+          <div class="notif_message">
+            <h3 class="message_title">Alina when changing the oil?</h3>
+            <p class="messge_descriptor">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
+          </div>
+        </div>
+      
+
+      <div class="notif">
+          <div class="user_img">
+            <img src="img/notif_warning.png" alt="">
+          </div>
+          <div class="notif_message">
+            <h3 class="message_title">Alina when changing the oil?</h3>
+            <p class="messge_descriptor">Lorem ipsum dolor sit amet, </p>
+          </div>
+        </div>
+
+
+         <div class="notif">
+          <div class="user_img">
+            <img src="img/notif_danger.png" alt="">
+          </div>
+          <div class="notif_message">
+            <h3 class="message_title">Alina when changing the oil?</h3>
+            <p class="messge_descriptor">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <header>
+     <div class="top_line">
+       <ul class="list-inline">
+         <li><a href="../gifts&cupons.html">Give 10$ , Get 10$  <i class="fa fa-heart"></i></a></li>
+         <li><a href="#" onclick="HelpOpenFn();">Help  <i class="fa fa-question-circle"></i></a></li>
+         <li><a href="#" onclick="NotifOpenFn();">Notification <i class="fa fa-bell" aria-hidden="true"></i><span class="number_notif">22</span></a></li>
+         <li><a href="#" onclick="openuser();">Alina Smith  <i class="fa fa-cog" aria-hidden="true"></i></a></li>
+       </ul>
+     </div>
+    </header>
+
+    <div class="bottom_line">
+       <div class="user">
+         <div class="user_photo"></div>
+         <h1>Welcome back, <strong>Alina</strong></h1>
+         <p>Nice to see you again!</p>
+       </div>
+       <div class="recommended_servises">
+         <h1>3</h1>
+         <p>recommended services</p>
+         <a href="#">View services</a>
+       </div>
+       <div class="give">
+        <img src="img/money.png" alt="">
+        <h3><strong>Give 10$ , Get 10$</strong></h3>
+        <p>For every friend you refer who <br> books an appointment, both you <br> and your friend will get $10.</p>
+       </div>
+     </div>
+
+    <div class="LogPastServices">
+      <img src="img/past_servise.png" alt="">
+      <div class="close"><p onclick = "closeLogPastServices();" ><i class="fa fa-times" aria-hidden="true"></i></p></div>
+      <h3>Log Past Services</h3>
+      <p>Store all your records in one place by adding past services <br> to cars in your account.</p>
+      <a href="#">Log Past Services</a>
+    </div>
+
+    <div class="ScheduleanOilChange">
+      <img src="img/Schedule.png" alt="">
+      <div class="close"><p onclick = "closeScheduleanOilChange();" ><i class="fa fa-times" aria-hidden="true"></i></p></div>
+      <h3>Schedule an Oil Change</h3>
+      <p>Frequent oil changes extend the life of your car and <br> prevent future repairs.  </p>
+      <a href="#">Book an oil change</a>
+    </div>
+
+    <div class="ScheduleaDiagnostic">
+      <img src="img/ScheduleServise.png" alt="">
+      <div class="close"><p onclick = "closeScheduleaDiagnostic();" ><i class="fa fa-times" aria-hidden="true"></i></p></div>
+      <h3>Schedule a Diagnostic</h3>
+      <p>Don’t let car problems go unchecked. Get your car inspected regularly to catch small <br> issues before they get worse. We’ll identify the issues and the solutions.</p>
+      <a href="#">Book a diagnostic</a>
+    </div>
+
+
+     
+    <div class="CarsADD">
+      <h1 id= "carH1">You Cars</h1>
+      <h1>You currently have no cars added <br> to your account.</h1>
+      <button class="addAcar" data-toggle="modal" href="#adds"> add a car</button>
+      
+      <div class="profil">
+         <h4>Complete you Profile</h4>
+          <p><span id ="calc">0</span> of 4 remaining</p>
+           <input type="checkbox" name="option1" value="a1" id = "ch1" onclick="checkkalk();"><span class="check">Add a car</span><Br>
+           <input type="checkbox" name="option2" value="a2" id = "ch2" onclick="checkkalk();"><span class="check">Add your ZIP code</span><Br>
+           <input type="checkbox" name="option3" value="a3" id = "ch3" onclick="checkkalk();"><span class="check">Add Adress</span><Br>
+           <input type="checkbox" name="option4" value="a4" id = "ch4" onclick="checkkalk();"><span class="check">Add payment option (paypalor credit card)</span><Br>
+      </div> 
+    </div>
+
+    <div class="CarsADD">
+      <h1>We will display your recommended <br> services here</h1>
+      <p>Add your car to start seeing <br> recommendations</p>
+     <button class="addAcar" data-toggle="modal" href="#adds"> add a car</button>
+    </div>
+
+    
+
+    <!-- Modal -->
+        <div class="modal fade" id="adds" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h1 class="text-center">Add a new car</h1>
+              </div>
+
+              <div class="modal-body">
+               <div class="row">
+                 <p><span><a href="#">Use license plate</a></span> or select manually below</p>
+
+                 <select name="Make" id="Make">
+                   <option value="1">Make</option>
+                   <option value="2">Audi</option>
+                   <option value="3">Ford</option>
+                   <option value="3">Fiat</option>
+                   <option value="3">Honda</option>
+                 </select>
+
+                 <select name="Year" id="Year" disabled>
+                   <option class="YearOption" value="1">Year</option>
+                   <option class="YearOption" value="2">2016</option>
+                   <option class="YearOption" value="3">2015</option>
+                   <option class="YearOption" value="3">2014</option>
+                   <option class="YearOption" value="3">2013</option>
+                   <option class="YearOption" value="3">2012</option>
+                   <option class="YearOption" value="3">2011</option>
+
+                 </select>
+
+                 <select name="Model" id="Model" disabled>
+                   <option value="1">Model</option>
+                   <option value="2">A</option>
+                   <option value="3">B</option>
+                   <option value="4">C</option>
+                 </select>
+
+                 <select name="Trim" id="Trim" disabled>
+                   <option value="1">Trim</option>
+                   <option value="2">L4-1.4</option>
+                 </select>
+               </div>
+              </div>
+
+              <div class="modal-footer">
+               <div class="row">
+                 <button class="btnAdd" onclick="AddCars();">add</button>
+                 <button class="btnCloce" onclick="closeModal();">cancel</button>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="modal fade" id="dashboard_first_visit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+              <div class="modal-aside" id = "foo">
+
+                <img src="img/dashboard_first_visit_1.png" alt="Monitor the  health of your car">
+                <p>Monitor the  health of your car</p>
+                <img src="img/dashboard_first_visit_2.png" alt="Ask a mechanic a question">
+                <p>Ask a mechanic a question</p>
+                <img src="img/dashboard_first_visit_3.png" alt="Review your service history">
+                <p>Review your service history <br> and upcoming  scheduled <br> maintenance</p>
+                <img src="img/dashboard_first_visit_4.png" alt="View recommended services for your car">
+                <p>View recommended services <br> for your car</p>
+              </div>
+
+
+              <div class="modal-body">
+               <div class="row">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                 <img src="img/dashboard_first_visit_main.png" alt="">
+                 <h1><strong>Welcome to your dashboard</strong></h1>
+                 <p>Personalize your experience by answering 3 quick questions.</p>
+                 <button class="DoIt" onclick="DOIT();">LET'S DO IT</button>
+                 <button class="Skip" onclick="Sipp();">SKIP FOR NOW</button>
+               </div>
+              </div>
+
+              
+            </div>
+          </div>
+        </div>
+
+        
+
+         <div class="modal fade" id="firstVisit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+
+              <div class="modal-header step_1_header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <ul class="list-inline">
+                	<li class="active">1. ZIP CODE</li>
+                	<li>2. YOUR CAR</li>
+                	<li>3. MILEAGE</li>
+                </ul>
+              </div>
+
+              <div class="modal-body text-center step_1">
+	               <div class="row">
+		               <img src="img/firstvisit.png" alt="">
+		               <h1>What is your ZIP Code?</h1>
+		               <p>Your ZIP Code allows us to match you with nearby mechanics.</p>
+		               <input type="number" placeholder="Your ZIP Code" id = "inputStep1">
+	               </div>
+              </div>
+
+               <div class="modal-footer step_1_footer">
+	               <div class="row">
+	                 <button class="CONTINUE" onclick="step1();">CONTINUE</button>
+	                 <button class="SKIP" onclick="SKIP();">SKIP THIS STEP</button>
+	               </div>
+              </div>
+
+              <div class="modal-header step_2_header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <ul class="list-inline">
+                	<li>1. ZIP CODE</li>
+                	<li class="active">2. YOUR CAR</li>
+                	<li>3. MILEAGE</li>
+                </ul>
+              </div>
+
+              <div class="modal-body text-center step_2">
+	               <div class="row">
+		               <img src="img/firstvisit_step_2.png" alt="">
+		               <h1>What car do you drive?</h1>
+		               <p><strong><a href="">Use license plate</a></strong> or select manually below</p>
+		              <select name="Make" id="Make_modal">
+	                   <option value="1">Make</option>
+	                   <option value="2">Audi</option>
+	                   <option value="3">Ford</option>
+	                   <option value="3">Fiat</option>
+	                   <option value="3">Honda</option>
+	                 </select>
+
+	                 <select name="Year" id="Year_modal" disabled>
+	                   <option class="YearOption" value="1">Year</option>
+	                   <option class="YearOption" value="2">2016</option>
+	                   <option class="YearOption" value="3">2015</option>
+	                   <option class="YearOption" value="3">2014</option>
+	                   <option class="YearOption" value="3">2013</option>
+	                   <option class="YearOption" value="3">2012</option>
+	                   <option class="YearOption" value="3">2011</option>
+
+	                 </select>
+
+	                 <select name="Model" id="Model_modal" disabled>
+	                   <option value="1">Model</option>
+	                   <option value="2">A</option>
+	                   <option value="3">B</option>
+	                   <option value="4">C</option>
+	                 </select>
+
+	                 <select name="Trim" id="Trim_modal" disabled>
+	                   <option value="1">Trim</option>
+	                   <option value="2">L4-1.4</option>
+	                 </select>
+	               </div>
+              </div>
+
+               <div class="modal-footer step_2_footer">
+	               <div class="row">
+	                 <button class="CONTINUE" onclick="step2();">CONTINUE</button>
+	                 <button class="SKIP" onclick="SKIP2();">SKIP THIS STEP</button>
+	               </div>
+              </div>
+
+              <div class="modal-header step_3_header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <ul class="list-inline">
+                	<li>1. ZIP CODE</li>
+                	<li>2. YOUR CAR</li>
+                	<li class="active">3. MILEAGE</li>
+                </ul>
+              </div>
+
+               <div class="modal-body text-center step_3">
+	               <div class="row">
+		               <img src="img/firstvisit_step_3.png" alt="">
+		               <h2>What is the current mileage?</h2>
+		               <p>Total and daily average mileage help us determine the pace of wear on your 2011 Audi A3 Quattro L4-2.0L Turbo..</p>
+		               <input type="text" placeholder="Total mileage" id = "inputStep3_1">
+		               <input type="text" placeholder="Daily mileage " id = "inputStep3_2">
+	               </div>
+              </div>
+
+               <div class="modal-footer step_3_footer">
+	               <div class="row">
+	                 <button class="CONTINUE" onclick="step3();">CONTINUE</button>
+	                 <button class="SKIP" onclick="SKIP3();">SKIP THIS STEP</button>
+	               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script>
+      $(document).ready(
+          function() {
+              $("html").niceScroll({cursorcolor:"#000"});
+          }
+      );
+    </script>
+    <!-- <script src= "js/main.js"></script> -->
+    <script src="js/dashboard.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

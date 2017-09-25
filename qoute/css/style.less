@@ -1,0 +1,2484 @@
+/*============    ШРИФТЫ    ===========*/
+@font-face{
+	font-family: "KickHornet";
+	src:url("..//fonts/KickHornet.eot");
+	src:url("..//fonts/KickHornet.eot&#iefix") format("embedded-opentype"),
+		url("..//fonts/KickHornet.woff") format("woff"),
+		url("..//fonts/KickHornet.ttf") format("treutype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: "Roboto-Bold";
+	src:url("..//fonts/Roboto-Bold.eot");
+	src:url("..//fonts/Roboto-Bold.eot&#iefix") format("embedded-opentype"),
+		url("..//fonts/Roboto-Bold.woff") format("woff"),
+		url("..//fonts/Roboto-Bold.ttf") format("treutype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Roboto-Medium";
+	src:url("..//fonts/Roboto-Medium.eot");
+	src:url("..//fonts/Roboto-Medium.eot&#iefix") format("embedded-opentype"),
+		url("..//fonts/Roboto-Medium.woff") format("woff"),
+		url("..//fonts/Roboto-Medium.ttf") format("treutype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Roboto-Regular";
+	src:url("..//fonts/Roboto-Regular.eot");
+	src:url("..//fonts/Roboto-Regular.eot&#iefix") format("embedded-opentype"),
+		url("..//fonts/Roboto-Regular.woff") format("woff"),
+		url("..//fonts/Roboto-Regular.ttf") format("treutype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Roboto-Light";
+	src:url("..//fonts/Roboto-Light.eot");
+	src:url("..//fonts/Roboto-Light.eot&#iefix") format("embedded-opentype"),
+		url("..//fonts/Roboto-Light.woff") format("woff"),
+		url("..//fonts/Roboto-Light.ttf") format("treutype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Roboto-Condensed";
+	src:url("..//fonts/Roboto-Condensed.eot");
+	src:url("..//fonts/Roboto-Condensed.eot&#iefix") format("embedded-opentype"),
+		url("..//fonts/Roboto-Condensed.woff") format("woff"),
+		url("..//fonts/Roboto-Condensed.ttf") format("treutype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*============    ГЛАВНЫЙ ЭКРАН    ===========*/
+body{
+	background-color: #f1f5f8;
+}
+
+header{
+	background-color: #112a4b;
+	width: 100%;
+	
+	z-index: 999;
+	float: left;
+	position: fixed;
+	h1{
+		font-family: KickHornet;
+		color: #57bcfc;
+		margin-left: 30px;
+		span{
+			color: #fc0a0a;
+		}
+	}
+	a{
+		line-height: 69px;
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin-right: 20px;
+		&:hover{
+			text-decoration: none;
+			cursor: pointer;
+		};
+	}
+}
+
+nav{
+	background-color: #fff;
+	position: fixed;
+	top: 68px;
+	width: 100%;
+	z-index: 9999;
+	ul{
+		margin: 0;
+		li{
+			width: 23%;
+			text-align: center;
+			margin-right: -4px;
+			a{
+				color: #8b8989;
+				text-transform: uppercase;
+				line-height: 25px;
+				font-size: 12px;
+				font-family: Roboto-Regular;
+				text-decoration: none;
+				&:hover{
+					text-decoration: none;
+				};
+			}
+			
+		}
+		.active{
+			border-bottom: 2px solid #53a7dc;
+			margin-right: -4px;
+		}
+	}
+}
+
+h1.title{
+	font-size: 32px;
+	font-family: Roboto-Regular;
+	margin-top: 150px;
+	margin-bottom: 10px;
+}
+p.title{
+	color: #848383;
+	font-family: Roboto-Regular;
+} 
+
+.wrapper{
+	width: 960px;
+	/*width: 1100px;*/
+	/*height: 500px;*/
+	position: relative;
+	margin: 50px auto;
+	/*border: 1px solid red;*/
+}
+	
+.Enter_Zip, .select_car, .select_car_no_select, .warning, .light, .By_service, .Book_remote, .Select_Time{
+	background-color: #fff;
+	width: 65%;
+	/*position: absolute;*/
+	padding-left: 40px;
+	border: 1px solid #e9e5e5;
+	border-radius: 4px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	-webkit-transition: all ease-out 0.3s;
+     -moz-transition: all ease-out 0.3s;
+     -o-transition: all ease-out 0.3s;
+     transition: all ease-out 0.3s;
+     &:hover{
+		box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.1);
+	};
+	h4{
+		font-family: Roboto-Regular;
+		color: #0b0b0b;
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+	p{
+		font-size: 12px;
+		font-family: Roboto-Regular;
+		color: #869fb4;
+
+	}
+	img{
+		z-index: 10;
+		position: relative;
+		left: 10px;
+	}
+	input{
+		border: 1px solid #e0dddd;
+		height: 35px;
+		width: 250px;
+		padding-left: 35px;
+		margin-left: -20px;
+		
+	}
+	p.great{
+		padding: 5px;
+		background-color: #e0f0fe;
+		border: 1px solid #a0c8f3;
+		color: #2790ec;
+		margin-right: 30px;
+		float: right;
+		font-size: 12px;
+	}
+}
+.Enter_Zip{
+	p.great{
+		display: none;
+	}
+	button.confirm_zip, .confirm_zip_NO{
+		display: none;
+		font-family: Roboto-Bold;
+		font-size: 14px;
+		background-color: #218be7;
+		color: #fff;
+		border: none;
+		border-radius: 30px;
+		padding: 10px 40px;
+		margin-top: 30px;
+		letter-spacing: 2px;
+	}
+}
+
+.select_car_no_select{
+	display: none;
+}
+
+.select_car{
+	top: 250px;
+	display: none;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	select{
+		margin-top: 20px;
+		display: block;
+		width: 93%;
+		height: 35px;
+		border: 1px solid #e0dddd;
+		padding-left: 10px;
+	}
+}
+
+.select_car_no_select{
+	top: 205px;
+	/*min-height: 692px;*/
+	/*margin-bottom: 300px;*/
+	margin-top: 35px;
+	margin-bottom: 35px;
+	h1{
+		font-size: 20px;
+		font-family: Roboto-Medium;
+		color: #1f2632;
+		margin-bottom: 20px;
+	}
+	.step{
+		.make_the_car, .make_the_year, .make_the_model, .make_the_trim{
+			background-color: #f1f5f8;
+			/*width: 80px;*/
+			min-width: 80px;
+			max-width: 100px;
+			height: 40px;
+			margin-bottom: 20px;
+			border: 1px solid #e9e5e5;
+			border-radius: 4px;
+			position: relative;
+			z-index: 3;
+			display: inline-block;
+			p{
+				color: #333333;
+				text-align: center;
+				line-height: 40px;
+				font-size: 13px;
+				font-family: Roboto-Regular;
+				z-index: 3;
+			};
+			&:hover{
+				cursor: pointer;
+			};
+			::after {
+			   
+			    content: '';
+			    width: 15px;
+			    height: 15px;
+			    background-color: #f1f5f8;
+			    border-right: 1px solid #e9e5e5;
+			    border-bottom: 1px solid #e9e5e5;
+			    position: absolute;
+			    bottom: -8px;
+			    left: 40%;
+			    -moz-transform: rotate(45deg); /* Для Firefox */
+			    -ms-transform: rotate(45deg); /* Для IE */
+			    -webkit-transform: rotate(45deg); /* Для Safari, Chrome, iOS */
+			    -o-transform: rotate(45deg); /* Для Opera */
+			    transform: rotate(45deg);
+			    z-index: -1;
+
+		   }
+
+		}
+		.make_the_year, .make_the_model, .make_the_trim{
+			display: none;
+		}
+	}
+	
+
+	.menu_car, .menu_date, .menu_model, .menu_trim{
+		background-color: #f1f5f8;
+		min-height: 525px;
+		width: 540px;
+		border: 1px solid #e9e5e5;
+		border-radius: 4px;
+		p{
+			color: #333333;
+			font-family: Roboto-Medium;
+			font-size: 12px;
+			padding-left: 10px;
+			padding-top: 10px;
+		}
+		ul{
+			list-style: none;
+			padding-left: 10px;
+			float: left;
+			li{
+				line-height: 35px;
+				font-size: 13px;
+				font-family: Roboto-Regular;
+				color: #333333;
+				width: 119px;
+				padding-left: 10px;
+				position: relative;
+				&:hover{
+					box-shadow: 1px 1px 12px #d4d7da;
+					cursor: pointer;
+					font-weight: bold;
+					&:after{
+						content:'';
+						width: 18px;
+						height: 14px;
+						display: inline-block;
+						background-image: url('../img/select_car_check.png');
+						background-repeat: no-repeat;
+						vertical-align: middle;
+						/*margin-left: 20px;*/
+						position: absolute;
+						right: 0px;
+						top: Calc(50% - 14px);
+					};
+				};
+			}
+			.select_li_title{
+				margin-left: -10px;
+				font-weight: bold;
+				border-bottom: 1px solid #e9e5e5;
+				margin-bottom: 10px;
+				&:hover{
+					box-shadow: none;
+					cursor: inherit;
+					&:after{
+						display: none;
+					}
+				};
+			}
+		}
+	}
+
+	.menu_date{
+		min-height: 530px;
+		display: none;
+		p{
+			margin-bottom: 0px;
+		}
+		
+		ul{
+			li{
+				width: 75px;
+			}
+		}
+	}
+	.menu_model{
+		min-height: 420px;
+		display: none;
+		p{
+			margin-bottom: 0px;
+		}
+		hr{
+			border-top: 1px solid #e9e5e5;
+			margin-top: 15px;
+		}
+	}
+	.menu_trim{
+		min-height: 210px;
+		display: none;
+		p{
+			margin-bottom: 0px;
+		}
+		hr{
+			border-top: 1px solid #e9e5e5;
+			margin-top: 15px;
+		}
+		ul{
+			li{
+				width: 250px;
+			}
+		}
+	}
+
+	.next{
+		background-color: #fff;
+		min-width: 80px;
+		max-width: 100px;
+		height: 40px;
+		margin-bottom: 20px;
+		border-radius: 4px;
+		position: relative;
+		z-index: 3;
+		border: 1px solid #e9e5e5;
+		display: inline-block;
+		&:hover{
+			cursor: pointer;
+		};
+		p{
+			color: #333333;
+			text-align: center;
+			line-height: 40px;
+			font-size: 13px;
+			font-family: Roboto-Regular;
+			z-index: 3;
+		};
+	}
+	button.dont_know{
+		font-family: Roboto-Medium;
+		font-size: 13px;
+		text-transform: uppercase;
+		color: #807e7e;
+		padding: 10px 30px;
+		background-color: #fff;
+		border-radius: 2px;
+		border: 1px solid #e0dddd;
+		float: right;
+		margin-right: 30px;
+		margin-top: 30px;
+		&:hover{
+			text-decoration: underline;
+		};
+	}
+}
+
+.Book_remote{
+	display: none;
+	top: 420px;
+	padding-right: 20px;
+	margin-bottom: 30px;
+	p{
+		font-size: 13px;
+		font-family: Roboto-Regular;
+		color: #7a7a7a;
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+	button{
+		padding: 10px 50px;
+		border: none;
+		font-family: Roboto-Bold;
+		border-radius: 2px;
+	}
+	button.AUTOMATIC{
+		background-color: #218be7;
+		border: 1px solid #218be7;
+		color: #fff;
+		margin-right: 5px;
+		letter-spacing: 2px;
+		&:hover{
+			background-color: #50a7f3;
+			border: 1px solid #50a7f3;
+		};
+	}
+	button.MANUAL{
+		background-color: transparent;
+		border: 1px solid #e0dddd;
+		color: #68686a;
+		margin-left: 5px;
+		letter-spacing: 2px;
+		&:hover{
+			background-color: #ebecec;
+		};
+	}
+}
+
+.warning{
+	display: none;
+	/*top: 660px;*/
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+	.top_line{
+		border-bottom: 1px solid #e0dddd;
+		width: 93%;
+		height: 40px;
+		margin-bottom: 20px;
+		p{
+			right: 40px;
+			display: block;
+			position: absolute;
+			text-transform: uppercase;
+			top: 15px;
+			&:after{
+				content:'';
+				width: 24px;
+				height: 26px;
+				display: inline-block;
+				background-image: url('../img/delate_ico.png');
+				margin-left: 10px;
+			};
+		}
+	}
+	p{
+		color: #7a7a7a;
+	}
+}
+
+.big_light{
+	display: none;
+	/*border: 1px solid red;*/
+	border-left: 1px solid #e0dddd;
+	height: 100%;
+	min-height: 430px;
+	/*top: 779px;*/
+	width: 60%;
+	/*position: relative;*/
+	margin-left: 5%;
+	padding-top: 35px;
+	margin-top: -31px;
+	.circle{
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		background-color: #e0dddd;
+		/*position: absolute;*/
+		/*left: -8px;*/
+		margin-left: -8px;
+		top: 80px;
+	}
+
+}
+
+.big_light2{
+	display: none;
+	border-left: 1px solid #e0dddd;
+	height: 100%;
+	/*min-height: 550px;*/
+	/*top: 765px;*/
+	width: 60%;
+	/*position: relative;*/
+	margin-left: 5%;
+	padding-top: 60px;
+	.circle2{
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		background-color: #e0dddd;
+		/*position: absolute;*/
+		left: -8px;
+		margin-left: -8px;
+		top: 130px;
+	}
+		.abs_help, .Appointment_brake_pads, .Appointment_brake, .Appointment_coolant, .Appointment_engine_oil, .Appointment_engine_soon, .Appointment_Oil_Change, .Appointment_parking_brake, .Appointment_Security, .Appointment_steering, .Appointment_Temp, .Appointment_Throttle, .Appointment_traction, .chech, .Appointment_airbag_system, .Appointment_Beam_Light, .Appointment_car_is_open, .Appointment_catalytic_converte, .Appointment_Defrost, .Appointment_exterior_lights, .Appointment_fog_lights, .Appointment_gas_cap, .Appointment_Overdrive, .Appointment_Reduced_Power, .Appointment_seat_belt, .Appointment_Transmission_Temperature, .Appointment_Washer_fluid, .ALT, .indicator_light, .Tire{
+		display: none;
+		text-align: center;
+		background-color: #fff;
+		/*position: absolute;*/
+		width: 95%;
+		right: 0; 
+		/*top: 70px;*/
+		border: 1px solid #e9e5e5;
+		border-radius: 4px;
+		margin-bottom: 100px;
+		margin-top:-55px;
+		margin-left: 28px;
+		padding: 20px;
+		padding-left: 30px;
+
+		-webkit-transition: all ease-out 0.3s;
+	     -moz-transition: all ease-out 0.3s;
+	     -o-transition: all ease-out 0.3s;
+	     transition: all ease-out 0.3s;
+     &:hover{
+		box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.1);
+	};
+		h3{
+			font-family: Roboto-Regular;
+			font-size: 17px;
+			color: #0b0b0b;
+			text-align: left;
+		}
+		p,ul{
+			color: #7e7e7e;
+			font-family: Roboto-Regular;
+			font-size: 13px;
+			text-align: left;
+		}
+		ul{
+			margin-left: -20px;
+		}
+		p.recommended{
+			&:before{
+				content:'';
+				width: 18px;
+				height: 14px;
+				display: inline-block;
+				background-image: url('../img/abs_ico_ok.png');
+				margin-right: 10px;
+			};
+		}
+		button{
+			color: #68686a;
+			padding: 10px 30px;
+			text-align: center;
+			border: 1px solid #c1c1c1;
+			border-radius: 30px;
+			background-color: transparent;
+			margin-top: 20px;
+			margin-bottom: 30px;
+			font-family: Roboto-Bold;
+			&:hover{
+				border: 1px solid #919191;
+			};
+		}
+	}
+}
+
+.By_service, .Select_Time{
+	/*top: 420px;*/
+	padding-top: 20px;
+/*	margin-bottom: 50px;*/
+	display: none;
+	.chkbody{
+			background-color: #a8d7ff;
+			width: 35px;
+			height: 14px;
+			border-radius: 20px;
+			position: relative;
+			float: left;
+			margin-right: 10px;
+			margin-top: 3px;
+			&:hover{
+				cursor: pointer;
+			};
+			.chrcircle{
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				background-color: #218be7;
+				margin-top: -3px;
+				right: 0px;
+				box-shadow: 1px 1px 5px #bfbfbf;
+			}
+		}
+		.deta{
+			float: right;
+			img{
+				margin-top: -55px;
+				margin-right: 30px;
+			&:hover{
+				cursor: pointer;
+			};
+		}
+			p.detailsP{
+				margin-top: -24px;
+				float: left;
+				font-family: Roboto-Regular;
+				font-size: 11px;
+				color: #7a7a7a;
+				text-transform: uppercase;
+				&:hover{
+					cursor: pointer;
+				};
+			}
+		}
+		
+		p.chk{
+			font-family: Roboto-Regular;
+			font-size: 14px;
+			color: #0b0b0b;
+		}
+		.top_body{
+			text-align: center;
+			p{
+				font-size: 12px;
+				font-family: Roboto-Regular;
+				color: #7a7a7a;
+				padding-right: 80px;
+				text-align: justify;
+				margin-top: 20px;
+			}
+			button.btn{
+				background-color: #218be7;
+				padding: 10px 80px;
+				border-radius: 30px;
+				border: none;
+				color: #fff;
+				margin-top: 20px;
+				font-size: 13px;
+				font-family: Roboto-Bold;
+				&:hover{
+					background-color: #59b1fd;
+				};
+			}
+		}
+}
+
+.Select_Time{
+	/*display: block;*/
+	display: none; 
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-right: 20px;
+	padding-left: 20px;
+	position: relative;
+	h3{
+		color: #0b0b0b;
+		font-size: 16px;
+		font-family: Roboto-Regular;
+		margin-bottom: 20px;
+	}
+	p.select_time_is_ok{
+		padding: 11px 20px;
+		/*position: absolute;
+		display: block;*/
+		width: 100%;
+		background-color: #e9f5e8;
+		color: #489c42;
+		font-size: 12px;
+		font-family: Roboto-Regular;
+		border: 1px solid #87d780;
+		border-radius: 4px;
+		&:before{
+			content:'';
+			width: 24px;
+			height: 24px;
+			display: inline-block;
+			background-image: url('../img/time_is_ok.png');
+			margin-right: 10px;
+			vertical-align: middle;
+		};
+	}
+	p.EstimatedServiceTime{
+		padding: 11px 20px;
+		width: 100%;
+		background-color: #fff;
+		color: #898888;
+		font-size: 12px;
+		font-family: Roboto-Regular;
+		border: 1px solid #e9e5e5;
+		border-radius: 4px;
+		position: relative;
+		span{
+			font-size: 13px;
+			font-family: Roboto-Medium;
+			color: #0d1724;
+			position: relative;
+		}
+
+		&:hover{
+				cursor: pointer;
+				
+				&:after{
+					content: 'Time required for all services to be done.';
+					width: 120px;
+					height: 40px;
+					display: inline-block;
+					background-color: #218be7;
+					color: #fff;
+					top: -40px;
+					left: 33%;
+					position: absolute;
+					font-size: 12px;
+					line-height: 13px;
+					font-family: Roboto-Regular;
+					padding: 5px 5px 3px 5px;
+				};
+
+				&:before{
+					content: ''; 
+					position: absolute; /* Абсолютное позиционирование */
+					left: 42.5%; bottom: 27px; /* Положение треугольника */
+					border: 8px solid transparent; /* Прозрачные границы */
+					border-top: 8px solid #218be7;
+				};
+			};	
+	}
+	
+	.Select_Time_body{
+		background-color: #fafbfc;
+		height: 370px;
+		border: 1px solid #e9e5e5;
+		position: relative;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 15px;
+		overflow: hidden;
+		.Time_body_head, .different_time{
+			position: relative;
+			/*width: Calc(100% - 40px);*/
+			width: 100%;
+			background-color: #fff;
+			border: 1px solid #e9e5e5;
+			height: 75px;
+			padding-left: 25px;
+			
+			p{
+				color: #898888;
+				font-size: 14px;
+				font-family: Roboto-Regular;
+				margin-bottom: 0;
+				margin-top: 20px;
+			}
+			p.date_time{
+				font-size: 13px;
+				font-family: Roboto-Medium;
+				color: #0d1724;
+				margin-top: 0;
+			}
+			button{
+				font-size: 14px;
+				font-family: Roboto-Bold;
+				color: #fff;
+				background-color: #218be7;
+				padding: 12px 40px;
+				border-radius: 30px;
+				text-transform: uppercase;
+				border: none;
+				right: 30px;
+				top: 15px;
+				position: absolute;
+
+			}
+		}
+		p.differentP{
+				font-size: 12px;
+				font-family: Roboto-Regular;
+				color: #898888;
+				/*padding: 0 10px;*/
+				padding-top: 10px;
+				padding-bottom: 10px;
+
+				&:before{
+					content:'';
+					height: 1px;
+					
+					width: 35.9%;
+					position: relative;
+					background-color: #e2e2e2;
+					display: inline-block;
+					vertical-align: middle;
+					margin-right: 5px;
+				};
+				&:after{
+					content:'';
+					height: 1px;
+					
+					width: 35.9%;
+					position: relative;
+					background-color: #e2e2e2;
+					display: inline-block;
+					vertical-align: middle;
+					margin-left: 5px;
+				}
+			}
+			button.btn_more_time{
+				border: none;
+				background-color: transparent;
+				color: #218be7;
+				font-size: 12px;
+				font-family: Roboto-Medium;
+				text-transform: uppercase;
+				text-align: center;
+				display: block;
+				margin: -5px auto;
+				margin-bottom: 13px;
+				width: 100%;
+				&:before{
+					content:'';
+					width: 21px;
+					height: 21px;
+					display: inline-block;
+					vertical-align: middle;
+					background-image: url('../img/more_time.png');
+					margin-right: 10px;
+				};
+				&:hover{
+					color: #095faa;
+				};
+			}
+		.different_time{
+			background-color: transparent;
+			/*bottom: 160px;*/
+			/*top: 60px;*/
+			border: none;
+			text-align: center;
+			padding: 0;
+			position: relative;
+			margin-right: 0;
+			width: 100%;
+			/*border: 1px solid red;*/
+			min-height: 100px;
+			
+			p.day{
+				font-size: 13px;
+				font-family: Roboto-Medium;
+				color: #0d1724;
+				text-align: left;
+				margin-top: 5px;
+				&:before{
+					content:'';
+					width: 14px;
+					height: 16px;
+					display: inline-block;
+					background-image: url('../img/calendar.png');
+					vertical-align: -15%;
+					margin-right: 10px;
+				};
+			}
+			.time_line{
+				position: relative;
+				width: 100%;
+				height: 30px;
+				border: 1px solid #d7d5d5;
+				margin-top: 10px;
+				display: block;
+				
+				.wrappre{ 
+					
+					position: relative;
+					width: 10px;
+					height: 29px;
+					top: -0.7px;
+					display: table-cell;
+					/*border-top: 1px solid #d7d5d5;*/
+					
+					
+					&:last-child{
+						border-right: none;
+					};
+					&:hover{
+						cursor: pointer;
+						background-color: #218be7;
+						border: 4px;
+						&:after{
+							content:'Starting: ';
+							color: #fff;
+							width: 100px;
+							height: 30px;
+							border: 4px;
+							background-color: #218be7;
+							display: inline-block;
+							position: absolute;
+							top: -40px;
+							left: -47px;
+							text-align: left;
+							font-size: 12px;
+							font-family: Roboto-Regular;
+							line-height: 30px;
+							padding-left: 15px;
+						};
+					&:nth-child(1){
+						&:after{
+							content:'Starting: 7:00';
+							left: -10px;
+						};
+						
+					};
+					&:nth-child(2){
+						&:after{
+							content:'Starting: 7:15';
+							left: -20px;
+						};
+						
+					};
+					&:nth-child(3){
+						&:after{
+							content:'Starting: 7:30';
+							left: -30px;
+						};
+						
+					};
+
+					&:nth-child(4){
+						&:after{
+							content:'Starting: 7:45';
+							left: -40px;
+						};
+						
+					};
+					&:nth-child(5){
+						&:after{
+							content:'Starting: 8:00';
+						};
+						
+					};
+					&:nth-child(6){
+						&:after{
+							content:'Starting: 8:15';
+						};
+						
+					};
+					&:nth-child(7){
+						&:after{
+							content:'Starting: 8:30';
+						};
+						
+					};
+					&:nth-child(8){
+						&:after{
+							content:'Starting: 8:45';
+						};
+						
+					};
+					&:nth-child(9){
+						&:after{
+							content:'Starting: 9:00';
+						};
+						
+					};
+					&:nth-child(10){
+						&:after{
+							content:'Starting: 9:15';
+						};
+						
+					};
+					&:nth-child(11){
+						&:after{
+							content:'Starting: 9:30';
+						};
+					};
+					&:nth-child(12){
+						&:after{
+							content:'Starting: 9:45';
+						};
+					};
+					&:nth-child(13){
+						&:after{
+							content:'Starting: 10:00';
+						};
+					};
+					&:nth-child(14){
+						&:after{
+							content:'Starting: 10:15';
+						};
+					};
+					&:nth-child(15){
+						&:after{
+							content:'Starting: 10:30';
+						};
+					};
+					&:nth-child(16){
+						&:after{
+							content:'Starting: 10:45';
+						};
+					};
+					&:nth-child(17){
+						&:after{
+							content:'Starting: 11:00';
+						};
+					};
+					&:nth-child(18){
+						&:after{
+							content:'Starting: 11:15';
+						};
+					};
+					&:nth-child(19){
+						&:after{
+							content:'Starting: 11:30';
+						};
+					};
+					
+					&:nth-child(20){
+						&:after{
+							content:'Starting: 11:45';
+						};
+					};
+					&:nth-child(21){
+						&:after{
+							content:'Starting: 12:00';
+						};
+					};
+					&:nth-child(22){
+						&:after{
+							content:'Starting: 12:15';
+						};
+					};
+					&:nth-child(23){
+						&:after{
+							content:'Starting: 12:30';
+						};
+					};
+					&:nth-child(24){
+						&:after{
+							content:'Starting: 12:45';
+						};
+					};
+					&:nth-child(25){
+						&:after{
+							content:'Starting: 1:00';
+						};
+					};
+					&:nth-child(26){
+						&:after{
+							content:'Starting: 1:15';
+						};
+					};
+					&:nth-child(27){
+						&:after{
+							content:'Starting: 1:30';
+						};
+					};
+					&:nth-child(28){
+						&:after{
+							content:'Starting: 1:45';
+						};
+					};
+					&:nth-child(29){
+						&:after{
+							content:'Starting: 2:00';
+						};
+					};
+					&:nth-child(30){
+						&:after{
+							content:'Starting: 2:15';
+						};
+					};
+					&:nth-child(31){
+						&:after{
+							content:'Starting: 2:30';
+						};
+					};
+					&:nth-child(32){
+						&:after{
+							content:'Starting: 2:45';
+						};
+					};
+					&:nth-child(33){
+						&:after{
+							content:'Starting: 3:00';
+						};
+					};
+					&:nth-child(34){
+						&:after{
+							content:'Starting: 3:15';
+						};
+					};
+					&:nth-child(35){
+						&:after{
+							content:'Starting: 3:30';
+						};
+					};
+					&:nth-child(36){
+						&:after{
+							content:'Starting: 3:45';
+						};
+					};
+					&:nth-child(37){
+						&:after{
+							content:'Starting: 4:00';
+						};
+					};
+					&:nth-child(38){
+						&:after{
+							content:'Starting: 4:15';
+						};
+					};
+					&:nth-child(39){
+						&:after{
+							content:'Starting: 4:30';
+						};
+					};
+					&:nth-child(40){
+						&:after{
+							content:'Starting: 4:45';
+						};
+					};
+					&:nth-child(41){
+						&:after{
+							content:'Starting: 5:00';
+						};
+					};
+					&:nth-child(42){
+						&:after{
+							content:'Starting: 5:15';
+						};
+					};
+					&:nth-child(43){
+						&:after{
+							content:'Starting: 5:30';
+						};
+					};
+					&:nth-child(44){
+						&:after{
+							content:'Starting: 5:45';
+						};
+					};
+					&:nth-child(45){
+						&:after{
+							content:'Starting: 6:00';
+						};
+					};
+					&:nth-child(46){
+						&:after{
+							content:'Starting: 6:15';
+						};
+					};
+					&:nth-child(47){
+						&:after{
+							content:'Starting: 6:30';
+						};
+					};
+					&:nth-child(48){
+						&:after{
+							content:'Starting: 6:45';
+						};
+					};
+					&:nth-child(49){
+						&:after{
+							content:'Starting: 7:00';
+						};
+					};
+					&:nth-child(50){
+						&:after{
+							content:'Starting: 7:15';
+						};
+					};
+					&:nth-child(51){
+						&:after{
+							content:'Starting: 7:30';
+						};
+					}
+					&:nth-child(52){
+						&:after{
+							content:'Starting: 7:45';
+						};
+					}
+					&:nth-child(53){
+						&:after{
+							content:'Starting: 8:00';
+						};
+					}
+					&:nth-child(54){
+						&:after{
+							content:'Starting: 8:15';
+						};
+					}
+					&:nth-child(55){
+						&:after{
+							content:'Starting: 8:30';
+						};
+					}
+					&:nth-child(56){
+						&:after{
+							content:'Starting: 8:45';
+							left: -50px;
+						};
+					}
+					&:nth-child(57){
+						&:after{
+							content:'Starting: 9:00';
+							left: -50px;
+						};
+					}
+					&:nth-child(58){
+						&:after{
+							left: -60px;
+						};
+					}
+					&:nth-child(59){
+						&:after{
+							left: -70px;
+						};
+					}
+					&:nth-child(60){
+						&:after{
+							left: -80px;
+						};
+					}
+						&:before{
+							content: ''; 
+							position: absolute; /* Абсолютное позиционирование */
+							left: -3px; bottom: 24px; /* Положение треугольника */
+							border: 8px solid transparent; /* Прозрачные границы */
+							border-top: 8px solid #218be7;
+						};
+
+					};
+				}
+				.element{
+					border-left:  1px solid #d7d5d5;
+				}
+				.time_disable{
+					background-color: #e2e2e2;
+					&:hover{
+						cursor: inherit;
+						&:after{
+							content:'No available';
+							color: #fff;
+							width: 100px;
+							height: 30px;
+							border: 4px;
+							background-color: #a5a5a5;
+							background-color: rgba(51,51,51,.8);
+							display: inline-block;
+							position: absolute;
+							top: -40px;
+							left: -50px;
+							text-align: left;
+							font-size: 12px;
+							font-family: Roboto-Regular;
+							line-height: 30px;
+							padding-left: 15px;
+						};
+						&:before{
+							content: ''; 
+							position: absolute; /* Абсолютное позиционирование */
+							left: -5px; bottom: 23px; /* Положение треугольника */
+							border: 8px solid transparent; /* Прозрачные границы */
+							border-top: 8px solid rgba(51,51,51,.8);
+						};
+
+					};
+				}
+			}
+			ul.data_ul{
+				text-align: left;
+				li{
+					width: 65px;
+					font-size: 12px;
+					font-family: Roboto-Regular;
+					color: #a0a0a0;
+					&:last-child{
+						text-align: right;
+						width: 61px;
+						padding-right: 0;
+					};
+					/*&:nth-child(3){
+						padding-left: 15px;
+					};
+					&:nth-child(4){
+						padding-left: 45px;
+					};*/
+
+					/*&:nth-child(5){
+						padding-left: 65px;
+					};*/
+				}
+			}
+		}
+		.next_time{
+			/*top: 50px;*/
+			.time_line{
+				.wrappre{ 
+					position: relative;
+					width: 10px;
+					height: 29px;
+					top: -1px;
+					display: table-cell;
+				}
+			}
+			
+		}
+	}
+}
+
+.light{
+	/*top: 530px;*/
+	/*width: 55%;*/
+	top: 25px;
+	width: 95%;
+	right: 0;
+	/*margin-left: 10%;*/
+	margin-left: 5%;
+	margin-bottom: 0px;
+	margin-top: -31px;
+	-webkit-transition: all ease-out 0.3s;
+     -moz-transition: all ease-out 0.3s;
+     -o-transition: all ease-out 0.3s;
+     transition: all ease-out 0.3s;
+     h4{
+     	margin-bottom: 30px;
+     	font-size: 17px;
+     	font-family: Roboto-Regular;
+     }
+	.checkeng_11, .checkeng_2, .checkeng_33, .maintreq_11, .maintreq_22, .throttle_22, .brakewarn_11, .brakewarn_22, .brakewarn_33, .brakepad_11, .servicesoon_11, .charge_1, .charge_2, .charge_33, .charge_44, .abs_11, .abs_22, .temp_11, .lowcoolant_11, .lowcoolant_22, .lowcoolant_33, .lowoil_11, .throttle_11, .parkbrake_11, .traction_11, .traction_22, .traction_33, .traction_44, .powersteering_11, .security_11, .security_22, .tire_11, .cruise_11, .cruise_22, .od_11, .seatbelt_11, .catalytic_11, .transmissiontemp_11, .srs_11, .rearwindefrost_11, .foglight_11, .highbeam_11, .reducedpower_11, .gascap_111, .lampout_11, .dooropen_11, .washerfluid_11{
+		display: inline-block;
+		width: 41px;
+		height: 40px;
+		margin: 5px;
+		margin-left: 10px;
+	}
+
+	.checkeng_11{
+		background-image: url('../img/gray/checkeng_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/checkeng_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.checkeng_2{
+		background-image: url('../img/gray/checkeng_2 (1)1.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/checkeng_2.png');
+			cursor: pointer;
+		};
+	}
+
+	.checkeng_33{
+		background-image: url('../img/gray/checkeng_33.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/checkeng_3.png');
+			cursor: pointer;
+		};
+	}
+
+	.maintreq_11{
+		background-image: url('../img/gray/maintreq_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/maintreq_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.maintreq_22{
+		background-image: url('../img/gray/maintreq_22.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/maintreq_2.png');
+			cursor: pointer;
+		};
+	}
+
+	.throttle_22{
+		background-image: url('../img/gray/throttle_22.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/throttle_2.png');
+			cursor: pointer;
+		};
+	}
+
+
+	.brakewarn_11{
+		background-image: url('../img/gray/brakewarn_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/brakewarn_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.brakewarn_22{
+		background-image: url('../img/gray/brakewarn_22.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/brakewarn_2.png');
+			cursor: pointer;
+		};
+	}
+
+	.brakewarn_33{
+		background-image: url('../img/gray/brakewarn_33.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/brakewarn_3.png');
+			cursor: pointer;
+		};
+	}
+
+	.brakepad_11{
+		background-image: url('../img/gray/brakepad_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/brakepad_1.png');
+			cursor: pointer;
+		};
+	}
+
+
+	.servicesoon_11{
+		background-image: url('../img/gray/servicesoon_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/servicesoon_1.png');
+			cursor: pointer;
+		};
+	}
+
+
+	.charge_1{
+		background-image: url('../img/gray/charge_1 (1)1.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/charge_1 (1).png');
+			cursor: pointer;
+		};
+	}
+
+
+	.charge_2{
+		background-image: url('../img/gray/charge_2.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/charge_2.png');
+			cursor: pointer;
+		};
+	}
+
+
+	.charge_33{
+		background-image: url('../img/gray/charge_33.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/charge_3.png');
+			cursor: pointer;
+		};
+	}
+
+
+	.charge_44{
+		background-image: url('../img/gray/charge_44.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/charge_4.png');
+			cursor: pointer;
+		};
+	}
+
+	.abs_11{
+		background-image: url('../img/gray/abs_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/abs_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.abs_22{
+		background-image: url('../img/gray/abs_22.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/abs_2.png');
+			cursor: pointer;
+		};
+	}
+
+	.temp_11{
+		background-image: url('../img/gray/temp_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/temp_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.lowcoolant_11{
+		background-image: url('../img/gray/lowcoolant_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/lowcoolant_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.lowcoolant_22{
+		background-image: url('../img/gray/lowcoolant_22.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/lowcoolant_2.png');
+			cursor: pointer;
+		};
+	}
+
+	.lowcoolant_33{
+		background-image: url('../img/gray/lowcoolant_33.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/lowcoolant_3.png');
+			cursor: pointer;
+		};
+	}
+
+	.lowoil_11{
+		background-image: url('../img/gray/lowoil_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/lowoil_1.png');
+			cursor: pointer;
+		};
+	}
+
+
+	.throttle_11{
+		background-image: url('../img/gray/throttle_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/throttle_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.parkbrake_11{
+		background-image: url('../img/gray/parkbrake_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/parkbrake_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.traction_11{
+		background-image: url('../img/gray/traction_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/traction_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.traction_22{
+		background-image: url('../img/gray/traction_22.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/traction_2.png');
+			cursor: pointer;
+		};
+	}
+
+
+	.traction_33{
+		background-image: url('../img/gray/traction_33.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/traction_3.png');
+			cursor: pointer;
+		};
+	}
+
+	.traction_44{
+		background-image: url('../img/gray/traction_44.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/traction_4.png');
+			cursor: pointer;
+		};
+	}
+
+	.powersteering_11{
+		background-image: url('../img/gray/powersteering_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/powersteering_1.png');
+			cursor: pointer;
+		};
+	}
+
+
+	.security_11{
+		background-image: url('../img/gray/security_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/security_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.security_22{
+		background-image: url('../img/gray/security_22.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/security_2.png');
+			cursor: pointer;
+		};
+	}
+
+
+	.tire_11{
+		background-image: url('../img/gray/tire_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/tire_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.cruise_11{
+		background-image: url('../img/gray/cruise_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/cruise_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.cruise_22{
+		background-image: url('../img/gray/cruise_22.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+
+		&:hover{
+			background-image: url('../img/red/cruise_2.png');
+			cursor: pointer;
+		};
+	}
+
+	.od_11{
+		background-image: url('../img/gray/od_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/od_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.seatbelt_11{
+		background-image: url('../img/gray/seatbelt_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/seatbelt_1.png');
+			cursor: pointer;
+		};
+	}
+	
+	.catalytic_11{
+		background-image: url('../img/gray/catalytic_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/catalytic_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.transmissiontemp_11{
+		background-image: url('../img/gray/transmissiontemp_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/transmissiontemp_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.srs_11{
+		background-image: url('../img/gray/srs_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/srs_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.rearwindefrost_11{
+		background-image: url('../img/gray/rearwindefrost_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/rearwindefrost_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.foglight_11{
+		background-image: url('../img/gray/foglight_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/foglight_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.highbeam_11{
+		background-image: url('../img/gray/highbeam_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/highbeam_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.reducedpower_11{
+		background-image: url('../img/gray/reducedpower_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/reducedpower_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.gascap_111{
+		background-image: url('../img/gray/gascap_111.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/gascap_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.lampout_11{
+		background-image: url('../img/gray/lampout_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/lampout_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.dooropen_11{
+		background-image: url('../img/gray/dooropen_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/dooropen_1.png');
+			cursor: pointer;
+		};
+	}
+
+	.washerfluid_11{
+		background-image: url('../img/gray/washerfluid_11.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		&:hover{
+			background-image: url('../img/red/washerfluid_1.png');
+			cursor: pointer;
+		};
+	}
+
+
+
+	&:hover{
+		box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.1);
+	};
+}
+
+
+.user_price, .user_select_price{
+	position: fixed;
+	/*position: absolute;*/
+	display: none;
+	/*right: 0;
+	top: 0;*/
+
+	margin-top: 0px;
+	/*margin-left: 650px;*/
+	width: 30%;
+	max-width: 326px;
+	height: 400px;
+	margin-left: 650px;
+	z-index: 50;
+	border-radius: 4px;
+	.top_line{
+		background-color: #218be7;
+		color: #fff;
+		padding-top: 15px;
+		padding-left: 20px;
+		border-radius: 4px 4px 0 0;
+		height: 80px;
+		h4{
+			margin: 0;
+			font-family: Roboto-Medium;
+			font-size: 13px;
+		}
+		h3{
+			font-family: Roboto-Medium;
+			font-size: 27px;
+			margin-top: 5px;
+			float: left;
+			margin-right: 35px;
+		}
+		p{
+			font-family: Roboto-Regular;
+			font-size: 11px;
+			margin-top: 15px;
+			color: #98cfff;
+		}
+	}
+	.body_line{
+		background-color: #fff;
+		padding-left: 20px;
+		padding-top: 10px;
+		padding-bottom: 15px;
+		border-radius: 0 0 4px 4px;
+		span{
+			color: #1f2632;
+			font-family: Roboto-Medium;
+			font-size: 21px;
+		}
+		p{
+			color: #898888;
+			font-size: 13px;
+			font-family: Roboto-Regular;
+			margin-top: 20px;
+		}
+
+		p.location_user, p.cars_user, p.enter_loc, p.select_car_user{
+			margin: 0;
+			padding: 0;
+			display: none;
+			&:hover{
+				text-decoration: underline;
+				cursor: pointer;
+			};
+		}
+		p.enter_loc{
+			display: inherit;
+		}
+		p.location_user, p.enter_loc{
+			margin-top: 15px;
+		}
+	}
+	.footer_line{
+		background-color: #f1f5f8;
+		border: 1.1px solid #e9e5e5;
+		padding-left: 20px;
+		padding-top: 10px;
+		padding-bottom: 15px;
+		border-radius: 4px;
+		a{
+			color: #898888;
+			font-family: Roboto-Regular;
+			font-size: 12px;
+		}
+	}
+	
+}
+.user_price{
+	display: block;
+}
+.user_select_price{
+	display: none;
+
+	.top_line{
+		height: 140px;
+		h3{
+			float: none;
+			margin-bottom: 0;
+			font-family: Roboto-Medium;
+		}
+		p{
+			margin-left: 0;
+			margin-top: 0;
+			font-family: Roboto-Regular;
+		}
+		table{
+			/*margin-top: 12px;*/
+			display: block;
+			position: absolute;
+			right: 10px;
+			top: 12px;
+			tr{
+				td{
+					width: 100px;
+					line-height: 24px;
+				}
+			} 
+		}
+		hr{
+			width: 90%;
+			margin: 0;
+			padding: 0;
+			margin-bottom: 10px;
+			margin-top: 10px;
+			border-top: 1px solid #1c3a93;
+		}
+		a.view_price{
+			color: #112a4b;
+			font-size: 13px;
+			font-family: Roboto-Medium;
+		}
+	}
+	.body_line{
+		p.PServices{
+			float: left;
+			margin-top: 10px;
+			margin-right: 10px;
+		}
+		hr{
+			width: 67%;
+			margin-right: 40px;
+		}
+		.chkbody{
+			background-color: #a8d7ff;
+			width: 35px;
+			height: 14px;
+			border-radius: 20px;
+			position: relative;
+			&:hover{
+				cursor: pointer;
+			};
+			.chrcircle{
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				background-color: #218be7;
+				margin-top: -3px;
+				right: 0px;
+				box-shadow: 1px 1px 5px #bfbfbf;
+			}
+		}
+		a.Inspect{
+			
+			font-size: 12px;
+			margin-top: -15px;
+			margin-right: 10px;
+			margin-left: 45px;
+			float: left;
+			color: #08182d;
+			font-family: Roboto-Medium;
+		}
+		img.delateImg{
+			float: right;
+			margin-top: -20px;
+			margin-right: 25px;
+			&:hover{
+				cursor:pointer;
+			};
+		}
+		p.Inspect{
+			margin-top: 10px;
+		}
+		table.incl{
+			margin-bottom: 5px;
+			tr{
+				margin-top: 10px;
+				margin-bottom: 30px;
+				td{
+					width: 50px;
+					/*padding: 5px;*/
+					color: #fff;
+					background-color: #339933;
+					border-radius: 4px;
+					font-size: 12px;
+					text-align: center;
+				}
+				th{
+					width: 200px;
+					padding-left: 10px;
+					position: relative;
+				}
+				th.fifticent{
+				&:hover{
+					cursor: pointer;
+				
+					&:after{
+						content: 'The mechanic will check all the electronic systems of vehicle control, and more.';
+						width: 210px;
+						height: 60px;
+						display: inline-block;
+						background-color: rgba(51,51,51,.8);
+						color: #fff;
+						top: -70px;
+						left: -25%;
+						position: absolute;
+						font-size: 12px;
+						line-height: 15px;
+						
+						padding: 10px;
+					};
+
+					&:before{
+						content: ''; 
+						position: absolute; /* Абсолютное позиционирование */
+						bottom: 14px; /* Положение треугольника */
+						left: 23%;
+						border: 8px solid transparent; /* Прозрачные границы */
+						border-top: 8px solid rgba(51,51,51,.8);
+					};
+				};
+			}
+			th.ServiceReport{
+				&:hover{
+					cursor: pointer;
+				
+					&:after{
+						content: 'See details of your service including car health score and maintenance ';
+						width: 210px;
+						height: 60px;
+						display: inline-block;
+						background-color: rgba(51,51,51,.8);
+						color: #fff;
+						top: -70px;
+						left: -25%;
+						position: absolute;
+						font-size: 12px;
+						line-height: 15px;
+						
+						padding: 10px;
+					};
+
+					&:before{
+						content: ''; 
+						position: absolute; /* Абсолютное позиционирование */
+						bottom: 14px; /* Положение треугольника */
+						left: 23%;
+						border: 8px solid transparent; /* Прозрачные границы */
+						border-top: 8px solid rgba(51,51,51,.8);
+					};
+				};
+			}
+			}
+			tr.show{
+				padding: 0;
+				margin: 0;
+				margin-bottom: 10px;
+			}
+		}
+		a.AddMore{
+			margin-top: 60px;
+		}
+	}
+	 
+}
+
+
+
+footer{
+	background-color: #ffffff;
+	border-top: 1px solid #d2d0d0;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	position: relative;
+	top: 700px;
+	.SERVICE,.INFO{
+		border-right: 1px solid #b2b2b2;
+	}
+	.SERVICE{
+		padding-right: 50px;
+	}
+	.INFO{
+		padding-bottom: 5px;
+	}
+	.soc{
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+		background-color: #b2b2b2;
+		border-radius: 50%;
+		text-align: center;
+		margin-top: 30px;
+		i{
+			line-height: 27px;
+			color: #fff;
+		}
+		&:hover{
+			background-color: #8e8d8d;
+		};
+	}
+	h4{
+		font-size: 12px;
+		color: #201f1f;
+		font-family: Roboto-Medium;
+	}
+	h4.PARTNERS{
+		display: block;
+		margin-top: -10px;
+	}
+	p{
+		color: #979696;
+		font-size: 14px;
+		font-family: Roboto-Regular;
+	}
+	p.ITColors{
+		display: block;
+		margin-top: 37%;
+		margin-left: 40px;
+	}
+	ul{
+		float: left;
+		list-style: none;
+		li{
+			a{
+				color: #979696;
+				font-size: 12px;
+				text-decoration: none;
+				&:hover{
+					text-decoration: none;
+				};
+			}
+		}
+	}
+	UL.CATEGORIES{
+		margin-right: 30px;
+	}
+}
+
+
+
+/*====================  Modal Wimdow =======================*/
+#info_select_service{
+	z-index: 9999;
+	.modal-dialog{
+		width: 800px;
+	}
+
+	.modal-header{
+		border-bottom: none;
+	}
+
+	.modal-body{
+		margin-top: -20px;
+		margin-bottom: 50px;
+		padding-left: 50px;
+		padding-right: 50px;
+		h2{
+			font-size: 19px;
+			font-family: Roboto-Regular;
+			color: #3d3e3e;
+		}
+		p{
+			font-size: 14px;
+			font-family: Roboto-Regular;
+			color: #7a7a7a;
+			span{
+				color: #1d7cd4;
+			}
+		}
+		p.plp{
+			margin-left: 30px;
+		}
+	}
+}
+
+#Price_breakdown{
+	z-index: 9999;
+
+	.modal-dialog{
+		width: 840px;
+	}
+
+	.modal-header{
+		padding-left: 40px;
+		padding-right: 40px;
+		border-bottom: none;
+		button.close{
+			margin-right: -20px;
+		}
+		h2{
+			font-size: 18px;
+			font-family: Roboto-Medium;
+			color: #272727;
+			margin-bottom: 20px;
+		}
+		p.labor{
+			padding: 5px;
+			padding-left: 10px;
+			background-color: #f8f8f8;
+			font-size: 16px;
+			font-family: Roboto-Medium;
+			color: #272727;
+		}
+		p{
+			font-size: 13px;
+			color: #7a7a7a;
+			font-family: Roboto-Regular;
+			margin-top: 10px;
+			margin-bottom: 0;
+			padding-left: 10px;
+		}
+		.Labor_fees{
+			border-bottom:  1px solid #e0dddd;
+			margin-top: 20px;
+			padding-bottom: 10px;
+			p.descript{
+				text-align: left;
+				float: left;
+				margin-top: 0;
+				padding-left: 10px;
+
+			}
+			p.priceP{
+				text-align: right;
+				padding-right: 10px;
+			}
+		}
+		.div_total{
+			margin-top: 10px;
+			padding-bottom: 10px;
+			text-align: right;
+			p.pTOTAL{
+				font-size: 14px;
+				font-family: Roboto-Medium;
+				color: #393737;
+				float: left;
+				text-align: left;
+			}
+			span.priceTOTAL{
+				text-align: right;
+				font-size: 31px;
+				font-family: Roboto-Medium;
+				color: #208ae7;
+			}
+		}
+	}
+	.modal-body{
+		padding-left: 50px;
+		padding-right: 40px;
+		padding-top: 0;
+		h2{
+			font-size: 18px;
+			font-family: Roboto-Medium;
+			color: #272727;
+			margin-bottom: 20px;
+		}
+		p{
+			font-size: 13px;
+			color: #7a7a7a;
+			font-family: Roboto-Regular;
+			margin-top: 10px;
+			margin-bottom: 0;
+			padding-left: 10px;
+		}
+		.panel{
+			h3.panel-title{
+				font-family: Roboto-Medium;
+				font-size: 14px;
+				color: #272727;
+			}
+		}
+		.panel-default>.panel-heading{
+			background-color: #fff;
+		}
+		h4.panel-title{
+			font-family: Roboto-Medium;
+			font-size: 14px;
+			color: #272727;
+			a{
+				text-decoration: none;
+			}
+		}
+		.panel-heading{
+			height: 50px;
+			line-height: 50px;
+			padding: 0;
+			padding-left: 15px;
+			h4{
+				line-height: 50px;
+				margin: 0;
+				padding: 0;
+			}
+			span{
+				float: right;
+				margin-top: -50px;
+				padding-right: 20px;
+				font-size: 24px;
+				color: #bfbdbd;
+				a{
+					text-decoration: none;
+					color: #bfbdbd;
+				}
+			}
+		}
+		.panel-default>.panel-heading+.panel-collapse>.panel-body{
+			padding-right: 70px;
+			color: #7a7a7a;
+			font-size: 13px;
+			font-family: Roboto-Regular;
+		}
+	}
+}
+
+.faq{
+	top: -200px;
+	width: 100%;
+	position: fixed;
+	text-align: center;
+	/*top: 100px;*/
+	z-index: 9999;
+	background-color: #fff;
+	padding-bottom: 20px;
+	h2{
+		font-family: Roboto-Medium;
+		font-size: 18px;
+	}
+	img{
+		margin-bottom: 10px;
+		margin-top: 20px;
+	}
+	p{
+		font-family: Roboto-Bold;
+	}
+	p.ptit{
+		font-family: Roboto-Regular;
+		color: #656667;
+	}
+}
+
+#mask {
+    background-color:rgba(0,0,0,.3);
+    height:100%;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index: 99;
+}
